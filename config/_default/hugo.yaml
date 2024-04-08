@@ -62,3 +62,17 @@ sitemap:
   _merge: deep
 minify:
   _merge: deep
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - $$
+            - $$
+          inline:
+          - - $
+            - $
+        enable: true
+params:
+  math: true
