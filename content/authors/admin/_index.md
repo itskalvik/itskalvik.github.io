@@ -29,8 +29,8 @@ bio: My research interests include Bayesian learning and robotics.
 
 # Interests to show in About widget
 interests:
-  - Bayesian learning
-  - Robotics
+  - Approximate Inference
+  - Path Planning
 
 # Education to show in About widget
 education:
