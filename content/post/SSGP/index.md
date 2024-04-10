@@ -71,7 +71,7 @@ We can now compute the variational distribution $q_\text{new}(\hat{\mathbf{f}})$
 
 $$
 \begin{aligned}
-&\text{KL}\left[q_\text{new}(\hat{\mathbf{f}}) || p(\hat{\mathbf{f}}|\mathbf{y}_\text{old}, \mathbf{y}_\text{new})\right] = \int q_\text{new}(\hat{\mathbf{f}}) \log \left[ \frac{q_\text{new}(\hat{\mathbf{f}})}{p(\hat{\mathbf{f}}|\mathbf{y}_\text{old}, \mathbf{y}_\text{new})} \right] d\hat{\mathbf{f}} \hspace{100cm}\\
+&\text{KL}\left[q_\text{new}(\hat{\mathbf{f}}) || p(\hat{\mathbf{f}}|\mathbf{y}_\text{old}, \mathbf{y}_\text{new})\right] = \int q_\text{new}(\hat{\mathbf{f}}) \log \left[ \frac{q_\text{new}(\hat{\mathbf{f}})}{p(\hat{\mathbf{f}}|\mathbf{y}_\text{old}, \mathbf{y}_\text{new})} \right] d\hat{\mathbf{f}} \\
 \end{aligned}
 $$
 
@@ -149,7 +149,7 @@ The above equation cannot be optimized directly as the first term with the norma
 
 $$
 \begin{aligned}
-\mathcal{F}(q_\text{new}(\hat{\mathbf{f}})) &= \int q_\text{new}(\hat{\mathbf{f}}) \log \left[ \frac{q(\mathbf{b})p(\mathbf{a})}{p(\mathbf{y}_\text{new}|\hat{\mathbf{f}}) p(\mathbf{b}) q(\mathbf{a})} \right] d\hat{\mathbf{f}} \hspace{100cm}\\
+\mathcal{F}(q_\text{new}(\hat{\mathbf{f}})) &= \int q_\text{new}(\hat{\mathbf{f}}) \log \left[ \frac{q(\mathbf{b})p(\mathbf{a})}{p(\mathbf{y}_\text{new}|\hat{\mathbf{f}}) p(\mathbf{b}) q(\mathbf{a})} \right] d\hat{\mathbf{f}}\\
 \end{aligned}
 $$
 
@@ -220,7 +220,7 @@ Equating the above derivative to 0 gives us the following optimal variational di
 
 $$
 \begin{aligned}
-0 &= \frac{d\mathcal{F}(q_\text{new}(\hat{\mathbf{f}}))}{dq(\mathbf{b})}  + \lambda \hspace{100cm}\\
+0 &= \frac{d\mathcal{F}(q_\text{new}(\hat{\mathbf{f}}))}{dq(\mathbf{b})}  + \lambda\\
 \end{aligned}
 $$
 

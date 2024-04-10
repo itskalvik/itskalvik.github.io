@@ -280,7 +280,7 @@ Plugging the above into the mirror-descent update equation gives us the followin
 
 $$
 \begin{aligned}
-&\implies \eta_{t+1} = \text{arg} \max_{\eta \in \mathcal{M}} \langle \eta, \hat{\nabla}_\eta \tilde{\mathcal{L}}(\eta_t) \rangle - \frac{1}{\beta_t} \text{KL}(q(\mathbf{z};\eta)||q_t(\mathbf{z};\eta_t)) \hspace{200cm} \\
+&\implies \eta_{t+1} = \text{arg} \max_{\eta \in \mathcal{M}} \langle \eta, \hat{\nabla}_\eta \tilde{\mathcal{L}}(\eta_t) \rangle - \frac{1}{\beta_t} \text{KL}(q(\mathbf{z};\eta)||q_t(\mathbf{z};\eta_t)) \\
 &= \text{arg} \max_{\eta \in \mathcal{M}} \left\langle \eta, \hat{\nabla}_\eta \mathbb{E}_{q} [\ln \tilde{p}_{nc}(\mathbf{z}, \mathbf{y})] \right\rangle + \mathbb{E}_q \left[\log \left(\frac{\tilde{p}_c(\mathbf{z}, \mathbf{y})}{q(\mathbf{z})}\right)\right] \\ & \quad \quad \quad \quad \quad \quad + \mathbb{E}_q \left[\log \left(\frac{q(\mathbf{z})}{q_t(\mathbf{z})}\right)\right] - \frac{1}{\beta_t} \text{KL}(q(\mathbf{z};\eta)||q_t(\mathbf{z};\eta_t)) \\
 \end{aligned}
 $$
