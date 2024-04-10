@@ -110,8 +110,7 @@ $$
 In a one dimensional Gaussian distribution, the covariance matrix is actually a scalar value which represents the variance $\sigma$ of the variable.
 
 ![](https://github.com/itskalvik/gaussian-processes-tutorial/blob/main/images/1D-Gaussian.png?raw=true)
-
-Click for an interactive demo: {{< rawhtml >}} <a href="https://colab.research.google.com/github/itskalvik/gaussian-processes-tutorial/blob/main/1D_Gaussian.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>{{< /rawhtml >}}
+{{< rawhtml >}} <a href="https://colab.research.google.com/github/itskalvik/gaussian-processes-tutorial/blob/main/1D_Gaussian.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>{{< /rawhtml >}}
 
 {{< spoiler text="Click here to see the code" >}}
     
@@ -153,6 +152,7 @@ In a two dimensional Gaussian distribution:
 * Geometrically, conditioning (distribution of one variable when we know the value of the other) in a 2D Gaussian looks like slicing the plot of the probability density function along the unknown variables' axis at the known variables' value.
 
 ![](https://github.com/itskalvik/gaussian-processes-tutorial/blob/main/images/2D-Gaussian.png?raw=true)
+{{< importPartial "2D-gaussian.html" >}}
 
 {{< spoiler text="Click here to see the code" >}}
     
@@ -237,6 +237,7 @@ We start to see a line or something that looks like a 1D function forming. If we
 ![](https://github.com/itskalvik/gaussian-processes-tutorial/blob/main/images/GP-5D-cond.gif?raw=true)
 
 ![](https://github.com/itskalvik/gaussian-processes-tutorial/blob/main/images/covariance_matrix.png?raw=true)
+{{< importPartial "5D-gaussian.html" >}}
 
 {{< spoiler text="Click here to see the code" >}}
     
@@ -398,6 +399,7 @@ Two variables parametrize it:
 Another thing I should mention is how to address the noise in available data. The plots we have seen so far assume the red data points whose labels we have access to have no noise. So, the functions generated from such a GP would pass strictly through such points. But, in some cases, the available data could contain noise. We can model it by adding a diagonal matrix with the individual data points' variance to the covariance matrix.
 
 ![](https://github.com/itskalvik/gaussian-processes-tutorial/blob/main/images/covariance_matrix_10D.png?raw=true)
+{{< importPartial "10D-gaussian.html" >}}
 
 {{< spoiler text="Click here to see the code" >}}
     

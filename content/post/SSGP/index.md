@@ -28,6 +28,8 @@ image:
 authors:
   - Kalvik
 
+toc: true
+
 tags:
   - Bayesian learning
   - Gaussian processes
