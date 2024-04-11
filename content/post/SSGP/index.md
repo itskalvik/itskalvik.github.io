@@ -48,7 +48,7 @@ Nonetheless, most sparse Gaussian process approaches focus on offline learning, 
 
 Indeed, the Kalman filter is a good example of a Gaussian process that addresses the problem of modeling streaming data. However, it also makes a Markovian assumption; as such, it is better suited for time series data. When the data is spatially correlated, other approaches must be employed. [Bui et al., 2017](https://proceedings.neurips.cc/paper/2017/hash/f31b20466ae89669f9741e047487eb37-Abstract.html), addressed the aforementioned problem in their paper titled 'Streaming Sparse Gaussian Process Approximations.' Their approach enables the fitting of an SGP to an initial dataset, followed by updates to the SGP—both model parameters and inducing point locations—using only the new data in batches. Importantly, this process avoids forgetting information learned from past data. The original paper is exceptionally well-written and its appendix provides a thorough explanation of the derivations. 
 
-This article aims to elucidate the derivation of their primary approach, incorporating additional intermediate steps to facilitate a more accessible understanding of the derivation. I highly recommend that you first familiarize yourself with the derivation of the SGP approach by Titsias (2009), I also have a detailed tutorial on that paper [here](https://itskalvik.github.io/VFE). 
+This article aims to elucidate the derivation of their primary approach, incorporating additional intermediate steps to facilitate a more accessible understanding of the derivation. I highly recommend that you first familiarize yourself with the derivation of the SGP approach by Titsias (2009), I also have a detailed tutorial on that paper [here]({{< ref "VFE/index.md" >}}). 
 
 ## Derivation
 
@@ -183,7 +183,7 @@ $$
 \end{aligned}
 $$
 
-Note that in the above, the first two terms correspond to the offline variational bound as seen in [Titsias (2009)](https://itskalvik.github.io/VFE), i.e., where $\mathbf{y}_\text{new}$ is the whole training dataset. The last two terms constrain the posterior to take into account the old likelihood through the old variational distribution $q(\mathbf{a})$ and prior $p(\mathbf{a})$.
+Note that in the above, the first two terms correspond to the offline variational bound as seen in [Titsias (2009)]({{< ref "VFE/index.md" >}}), i.e., where $\mathbf{y}_\text{new}$ is the whole training dataset. The last two terms constrain the posterior to take into account the old likelihood through the old variational distribution $q(\mathbf{a})$ and prior $p(\mathbf{a})$.
 
 We can now take the derivative of $\mathcal{F}(q_\text{new}(\hat{\mathbf{f}}))$ with respect to $q(\mathbf{b})$ and equate it to zero to derive the closed-form solution to the optimal variational distribution $q_\text{opt}(\mathbf{b})$:
 

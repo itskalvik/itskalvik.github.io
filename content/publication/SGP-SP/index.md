@@ -31,6 +31,5 @@ tags: []
 featured: false
 
 url_pdf: 'https://arxiv.org/pdf/2303.00028.pdf'
-url_code: 'https://github.com/itskalvik/SGP-Tools'
 
 ---

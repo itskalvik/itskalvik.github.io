@@ -35,7 +35,6 @@ links:
   url: 'https://nbviewer.org/github/itskalvik/itskalvik.github.io/blob/gh-pages/assets/SGP_IPP_APP.pdf'
 
 url_pdf: 'https://arxiv.org/pdf/2309.07050.pdf'
-url_code: 'https://github.com/itskalvik/SGP-Tools'
 url_video: 'https://www.youtube.com/embed/6PmpuqfQUv8?si=xfz6pa4n48optZ1P'
 
 ---

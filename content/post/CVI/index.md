@@ -43,7 +43,7 @@ $$
 p(\mathbf{z}|\mathbf{y}) = \frac{p(\mathbf{y}, \mathbf{z})}{\int p(\mathbf{y}, \mathbf{z}) d\mathbf{z}} = \frac{p(\mathbf{y} | \mathbf{z})p(\mathbf{z})}{p(\mathbf{y})} 
 $$
 
-However, the marginal $p(\mathbf{y})$ is often computationally intractable due to the integral involved in computing $\int p(\mathbf{y}, \mathbf{z}) d\mathbf{z}$. As a result, we need to resort to approximate inference methods such as variational inference to compute the posterior. Variational inference using stochastic gradient descent is a well-established approach (refer to my tutorial on [variational Gaussian approximation](https://itskalvik.github.io/VGAFreeParams) for more details). 
+However, the marginal $p(\mathbf{y})$ is often computationally intractable due to the integral involved in computing $\int p(\mathbf{y}, \mathbf{z}) d\mathbf{z}$. As a result, we need to resort to approximate inference methods such as variational inference to compute the posterior. Variational inference using stochastic gradient descent is a well-established approach (refer to my tutorial on [variational Gaussian approximation]({{< ref "VGAFreeParams/index.md" >}}) for more details). 
 
 But if we make a few minor assumptions about how the inference problem is set up, we can leverage the conjugacy of the distributions involved in computing the posterior to obtain a computationally efficient variant of variational inference called Conjugate-Computation Variational Inference (CVI) ([Khan and lin, 2017](https://arxiv.org/abs/1703.04265)). This article will explain the CVI approach and its derivation.
 
@@ -79,7 +79,7 @@ When the joint distribution $p(\mathbf{y}, \mathbf{z})$ cannot be decomposed int
 
 ### Variational Inference using Stochastic Gradient Methods
 
-In variational inference (VI), we approximate the posterior $p\mathbf{(z\mid y)}$ by minimizing the KL divergence between the posterior and the variational distribution $q(\mathbf{z}; \lambda)$ parametrized by the natural parameters $\lambda$ (detailed derivation shown in my tutorial on [Variational Gaussian Approximation](https://itskalvik.github.io/VGAFreeParams)):
+In variational inference (VI), we approximate the posterior $p\mathbf{(z\mid y)}$ by minimizing the KL divergence between the posterior and the variational distribution $q(\mathbf{z}; \lambda)$ parametrized by the natural parameters $\lambda$ (detailed derivation shown in my tutorial on [Variational Gaussian Approximation]({{< ref "VGAFreeParams/index.md" >}})):
 
 $$
 \underbrace{\text{KL}(q(\mathbf{z}) || p(\mathbf{z} | \mathbf{y}))}_\text{Minimize} = \mathbb{E}_{q} [\ln q(\mathbf{z})] - \mathbb{E}_{q} [\ln p(\mathbf{z}, \mathbf{y})] +  \ln p(\mathbf{y})
@@ -103,7 +103,7 @@ here, $\hat{\nabla}_\lambda$ represents the stochastic gradients of the ELBO $\m
 
 Stochastic gradient methods can be applied to a wide variety of inference problems and exhibit good scalability. However, a naive application of these methods could have the following limitations:
 
-* The efficiency and convergence rate may depend on the parameterization used for the variational distribution $q(\mathbf{z})$. For more details, refer to my tutorial on [Variational Gaussian Approximation](https://itskalvik.github.io/VGAFreeParams).
+* The efficiency and convergence rate may depend on the parameterization used for the variational distribution $q(\mathbf{z})$. For more details, refer to my tutorial on [Variational Gaussian Approximation]({{< ref "VGAFreeParams/index.md" >}}).
 
 * The parameters $\lambda$ of the variational distribution $q(\mathbf{z})$ exist in a Riemannian space where the steepest descent direction is not always aligned with the gradient direction. This poses a challenge because conventional gradient methods operate in Euclidean spaces. This issue becomes apparent in the following alternate formulation of stochastic gradient descent (ascent):
 
@@ -131,7 +131,7 @@ $$
 q(\mathbf{z}; \lambda) = h(\mathbf{z}) \exp \left\{ \langle \phi(\mathbf{z}), \lambda \rangle - A(\lambda) \right\}
 $$
 
-with $\lambda$ as the natural parameters. Refer to my [tutorial on natural parameters for more details](https://itskalvik.github.io/NaturalParams). The minimal representation implies a one-to-one mapping between the natural parameters $\lambda$ and the mean parameters $\eta := \mathbb{E}_q[\phi(\mathbf{z})]$. Indeed, the ability to switch between the natural parametrization and mean parametrization plays a critical role in deriving the CVI method.
+with $\lambda$ as the natural parameters. Refer to my [tutorial on natural parameters for more details]({{< ref "NaturalParams/index.md" >}}). The minimal representation implies a one-to-one mapping between the natural parameters $\lambda$ and the mean parameters $\eta := \mathbb{E}_q[\phi(\mathbf{z})]$. Indeed, the ability to switch between the natural parametrization and mean parametrization plays a critical role in deriving the CVI method.
 
 #### Assumption 2
 
@@ -212,7 +212,7 @@ $$
     \eta = \nabla_\lambda A(\lambda)
     $$
 
-  * Natural gradients (refer to my [tutorial on natural parameters](https://itskalvik.github.io/NaturalParams) for more details.)
+  * Natural gradients (refer to my [tutorial on natural parameters]({{< ref "NaturalParams/index.md" >}}) for more details.)
 
     $$
     \begin{aligned}

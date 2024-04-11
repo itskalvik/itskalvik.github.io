@@ -29,6 +29,7 @@ bio: My research interests include Bayesian learning and robotics.
 
 # Interests to show in About widget
 interests:
+  - Bayesian Learning
   - Approximate Inference
   - Path Planning
 
@@ -73,4 +74,4 @@ social:
 highlight_name: true
 ---
 
-I am interested in Bayesian learning and robotics. Currently, I am researching sparse Gaussian processes to address crucial problems in robotics, such as generating explainable DNN predictions, sensor placement, multi-robot informative path planning, and learning robot dynamics.
+My research is at the intersection of machine learning and robotics. Currently, I am researching sparse Gaussian processes to address crucial problems in robotics, such as generating explainable DNN predictions, sensor placement, multi-robot informative path planning, and learning robot dynamics.
