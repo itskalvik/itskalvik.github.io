@@ -34,9 +34,6 @@ We're an open source movement that depends on your support to stay online and th
 
 <p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
 
-## Demo image credits
-
-- [Unsplash](https://unsplash.com)
 
 ## Latest news
 
