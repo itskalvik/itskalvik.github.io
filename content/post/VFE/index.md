@@ -84,6 +84,8 @@ The problem with this approach is that it requires an inversion of a matrix of s
 
 Sparse Gaussian processes (SGPs) address the computational cost issues of Gaussian processes. Although there are numerous SGP approaches, Titsias's variational free energy (VFE) method is the most well known approach and has had a significant impact on the Gaussian process literature. 
 
+{{< figure src="featured.gif" caption="Illustration of sparse Gaussian processes.">}}
+
 As the name suggests, VFE is a variational approach that we can use to find an approximate posterior distribution. The main idea behind variational methods is to pick a parametric family of distributions (the variational distribution) to model the variables of interest. The distribution is chosen so that it is computationally tractable compared to the true distribution of the variables. 
 
 We use the evidence lower bound (ELBO) as the optimization objective that, when maximized, would result in a variational distribution close to the true distribution when optimized. The ELBO is derived as follows using Jensen's inequality on the log probability of the observed output variables $\mathbf{y}$
