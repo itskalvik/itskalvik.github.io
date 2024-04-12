@@ -74,4 +74,4 @@ social:
 highlight_name: true
 ---
 
-My research is at the intersection of machine learning and robotics. Currently, I am researching sparse Gaussian processes to address crucial problems in robotics, such as generating explainable DNN predictions, sensor placement, multi-robot informative path planning, and learning robot dynamics.
+My research lies at the intersection of machine learning and robotics, with a focus on approximate inference (Bayesian learning) and path planning. Currently, I am investigating sparse Gaussian processes to tackle critical issues in robotics. These include generating explainable DNN predictions, sensor placement, multi-robot informative path planning, and robot motion planning.
