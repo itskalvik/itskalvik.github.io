@@ -21,7 +21,7 @@ marketing:
     description: 'Academic resume profile and blog.'
     twitter: ''
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-Z2TVV3MF1S'
     baidu_tongji: ''
     google_tag_manager: ''
     microsoft_clarity: ''
@@ -70,7 +70,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/itskalvik/_itskalvik.github.io'
+    url: 'https://github.com/itskalvik/itskalvik.github.io'
     content_dir: content
     branch: main
   avatar:
