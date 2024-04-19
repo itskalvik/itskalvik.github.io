@@ -11,7 +11,8 @@ external_link: ''
 image:
   caption: 
   focal_point: Smart
-
+  preview_only: true
+  
 ---
 
 {{< figure src="logo_light.png" class="mongo_light">}}
