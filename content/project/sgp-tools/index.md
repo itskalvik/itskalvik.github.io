@@ -14,6 +14,9 @@ image:
 
 ---
 
+{{< figure src="logo_light.png" class="mongo_light">}}
+{{< figure src="logo_dark.png" class="mongo_dark">}}
+
 {{< icon name="github" pack="fab" >}} [**Github Repo**](https://github.com/itskalvik/sgp-tools)
 
 SGP-Tools is a software suite for SGP-based [Sensor Placement](https://itskalvik.com/publication/sgp-sp) (SP) and [Informative Path Planning](https://itskalvik.com/publication/sgp-ipp) (IPP).

@@ -23,4 +23,11 @@
 
 .left, .right {
     display: inline-block;
+}
+
+body:not(.dark) .mongo_dark {
+    display: none;
+  }
+  .dark .mongo_light {
+    display: none;
   }
