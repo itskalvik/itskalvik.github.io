@@ -6,7 +6,7 @@ title: "STAR: Simultaneous Tracking and Recognition through Millimeter Waves and
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Prabhu Janakaraj
-  - Kalvik Jakkala
+  - admin
   - Arupjyoti Bhuyan
   - Zhi Sun
   - Pu Wang
