@@ -183,7 +183,6 @@ Now that we have a variationl distribution, we can substute it into the bound $\
 
 $$
 \begin{aligned}
-\require{cancel}
 \mathcal{F}(q) &= \int q(\hat{\mathbf{f}}) \log \frac{p(\mathbf{y, \hat{f}})}{q(\hat{\mathbf{f}})} d\hat{\mathbf{f}} \\
 &= \int p(\mathbf{f} | \mathbf{u}) q(\mathbf{u}) \log \frac{p(\mathbf{y|f}) \cancel{p(\mathbf{f} | \mathbf{u})} p(\mathbf{u})}{\cancel{p(\mathbf{f} | \mathbf{u})} q(\mathbf{u})} d\hat{\mathbf{f}} \\
 &= \int p(\mathbf{f} | \mathbf{u}) q(\mathbf{u}) \log \frac{p(\mathbf{y|f}) p(\mathbf{u})}{q(\mathbf{u})} d\hat{\mathbf{f}}
@@ -263,7 +262,6 @@ If we reverse the Jensen's inequality in the bound $\mathcal{F}(q)$, it would co
 
 $$
 \begin{aligned}
-\require{cancel}
 \mathcal{F}^*(q) &= \log \int \cancel{q(\mathbf{u})} \frac{\mathcal{N}(\mathbf{y} | \boldsymbol{\alpha}, \sigma^2I) p(\mathbf{u})}{\cancel{q(\mathbf{u})}} d\mathbf{u} - \frac{1}{2 \sigma^2} Tr (\mathbf{K}_{ff} - \mathbf{Q}) \\
 &= \log \int \mathcal{N}(\mathbf{y} | \boldsymbol{\alpha}, \sigma^2I) p(\mathbf{u}) d\mathbf{u} - \frac{1}{2 \sigma^2} Tr (\mathbf{K}_{ff} - \mathbf{Q}) \\
 &= \log [\mathcal{N}(\mathbf{y} | 0, \sigma^2I + \mathbf{Q})] - \frac{1}{2 \sigma^2} Tr (\mathbf{K}_{ff} - \mathbf{Q}) \\

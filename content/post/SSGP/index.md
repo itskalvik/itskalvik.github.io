@@ -108,7 +108,6 @@ $$
 
 ---
 $$
-\require{cancel}
 \begin{aligned}
 \frac{q_\text{old}(\hat{\mathbf{f}})}{p(\hat{\mathbf{f}}|\theta_\text{old})} = \frac{\cancel{p(\mathbf{f}|\mathbf{a})}q(\mathbf{a})}{\cancel{p(\mathbf{f}|\mathbf{a})}p(\mathbf{a})} = \frac{q(\mathbf{a})}{p(\mathbf{a})}
 \end{aligned}
@@ -375,11 +374,11 @@ $$
 \begin{aligned}
 q_\text{opt}(\mathbf{b}) &= \frac{1}{\mathcal{C}} p(\mathbf{b}) \exp [E_1 + E_2] \\
 &\propto p(\mathbf{b})  \mathcal{N}\left(\mathbf{D}_{\mathbf{a}}\mathbf{S}^{-1}_\mathbf{a}\mathbf{m_a}; \mathbf{K}_\mathbf{ab}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{b}, \mathbf{D}_{\mathbf{a}}\right) \mathcal{N}\left(\mathbf{y}_\text{new} | \mathbf{K}_\mathbf{fb}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{b}, \sigma^2I\right) \\
-&= p(\mathbf{b}) \underbrace{\mathcal{N} \left( \hat{\mathbf{y}} ; \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{b}, \Sigma_\hat{\mathbf{y}} \right)}_{\mathbf{y}_\text{new}, \mathbf{a} | \mathbf{b}} \\
+&= p(\mathbf{b}) \underbrace{\mathcal{N} \left( \mathbf{Y} ; \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{b}, \Sigma_\mathbf{Y} \right)}_{\mathbf{y}_\text{new}, \mathbf{a} | \mathbf{b}} \\
 & \quad \text{where,} \\
-& \quad \hat{\mathbf{y}}= \begin{bmatrix} \mathbf{y}_\text{new} \\ \mathbf{D}_{\mathbf{a}}\mathbf{S}^{-1}_\mathbf{a}\mathbf{m_a} \end{bmatrix},
+& \quad \mathbf{Y}= \begin{bmatrix} \mathbf{y}_\text{new} \\ \mathbf{D}_{\mathbf{a}}\mathbf{S}^{-1}_\mathbf{a}\mathbf{m_a} \end{bmatrix},
 \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}} = \begin{bmatrix} \mathbf{K}_{\mathbf{f}\mathbf{b}} \\ \mathbf{K}_{\mathbf{a}\mathbf{b}} \end{bmatrix},
-\Sigma_\hat{\mathbf{y}} = \begin{bmatrix} \sigma^2I & 0 \\ 0 & \mathbf{D}_{\mathbf{a}} \end{bmatrix}
+\Sigma_\mathbf{Y} = \begin{bmatrix} \sigma^2I & 0 \\ 0 & \mathbf{D}_{\mathbf{a}} \end{bmatrix}
 \end{aligned}
 $$
 
@@ -389,7 +388,7 @@ However, we are not done yet. We first have to marginalize the prior $p(\mathbf{
 
 $$
 \begin{aligned}
-q_\text{opt}(\mathbf{b}) &\propto \mathcal{N} \left( \hat{\mathbf{y}} ; \mathbf{0}, \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{K}_{\mathbf{b}\hat{\mathbf{f}}} + \Sigma_\hat{\mathbf{y}} \right) \\
+q_\text{opt}(\mathbf{b}) &\propto \mathcal{N} \left( \mathbf{Y} ; \mathbf{0}, \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{K}_{\mathbf{b}\hat{\mathbf{f}}} + \Sigma_\mathbf{Y} \right) \\
 \end{aligned}
 $$
 
@@ -408,19 +407,19 @@ p(\mathbf{f}) &= \int p(\mathbf{f|u}) p(\mathbf{u}) d\mathbf{u} \\
 \end{aligned}
 $$
 
-In our case, $p(\mathbf{b}) =  \mathcal{N} \left(\mathbf{0}, \mathbf{K}_\mathbf{bb} \right)$ corresponds to the prior $p(\mathbf{u})$ in the above identity, and $\mathcal{N} \left( \hat{\mathbf{y}} ; \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{b}, \Sigma_\hat{\mathbf{y}} \right)$ corresponds to the likelihood $p(\mathbf{f \mid u})$. 
+In our case, $p(\mathbf{b}) =  \mathcal{N} \left(\mathbf{0}, \mathbf{K}_\mathbf{bb} \right)$ corresponds to the prior $p(\mathbf{u})$ in the above identity, and $\mathcal{N} \left( \mathbf{Y} ; \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{b}, \Sigma_\mathbf{Y} \right)$ corresponds to the likelihood $p(\mathbf{f \mid u})$. 
 
 ---
 
 {{< /spoiler >}}
 
-The above is a distribution over $\hat{\mathbf{y}}$. In practice, we have access to $\hat{\mathbf{y}}$ as it is formed using $q(\mathbf{a})$ and $\mathbf{y}_\text{new}$. As such, we can now use Gaussian process conditioning to get the solution posterior over $\mathbf{b}$ given $\hat{\mathbf{y}}$:
+The above is a distribution over $\mathbf{Y}$. In practice, we have access to $\mathbf{Y}$ as it is formed using $q(\mathbf{a})$ and $\mathbf{y}_\text{new}$. As such, we can now use Gaussian process conditioning to get the solution posterior over $\mathbf{b}$ given $\mathbf{Y}$:
 
 $$
 \begin{aligned}
 q_\text{opt}(\mathbf{b}) &\propto \mathcal{N}(\mathbf{b} ; 
-\boldsymbol{\mu} = \mathbf{K}_{\mathbf{b}\hat{\mathbf{f}}} \left( \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{K}_{\mathbf{b}\hat{\mathbf{f}}} + \Sigma_\hat{\mathbf{y}} \right)^{-1} \hat{\mathbf{y}}, \\
-&\quad \quad \quad \ \ \ \boldsymbol{\Sigma} = \mathbf{K}_\mathbf{bb} - \mathbf{K}_{\mathbf{b}\hat{\mathbf{f}}} \left( \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{K}_{\mathbf{b}\hat{\mathbf{f}}} + \Sigma_\hat{\mathbf{y}} \right)^{-1} \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}} )
+\boldsymbol{\mu} = \mathbf{K}_{\mathbf{b}\hat{\mathbf{f}}} \left( \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{K}_{\mathbf{b}\hat{\mathbf{f}}} + \Sigma_\mathbf{Y} \right)^{-1} \mathbf{Y}, \\
+&\quad \quad \quad \ \ \ \boldsymbol{\Sigma} = \mathbf{K}_\mathbf{bb} - \mathbf{K}_{\mathbf{b}\hat{\mathbf{f}}} \left( \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}}\mathbf{K}_\mathbf{bb}^{-1}\mathbf{K}_{\mathbf{b}\hat{\mathbf{f}}} + \Sigma_\mathbf{Y} \right)^{-1} \mathbf{K}_{\hat{\mathbf{f}}\mathbf{b}} )
 \end{aligned}
 $$
 

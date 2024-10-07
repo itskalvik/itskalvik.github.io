@@ -1,5 +1,5 @@
 ---
-title: 'Blog'
+title: 'Projects'
 date: 2024-05-19
 type: landing
 
@@ -11,14 +11,13 @@ design:
 sections:
   - block: collection
     content:
-      title: Blog
-      count: 100
+      title: Featured Project
       text:
       filters:
         folders:
-          - post
+          - project
     design:
       view: article-grid
       fill_image: false
-      columns: 2
+      columns: 1
 ---
