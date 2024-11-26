@@ -1,0 +1,53 @@
+# Meta Data for SEO
+
+## Homepage
+title = "[Staging] Your Site Name"
+titleSeparator = "|"
+description = "Your site description goes here"
+baseURL = "https://yourdomain.com/"
+
+## Open Graph
+images = ["images/default-og-image.png"]
+ogLocale = "en_US"
+domainTLD = "yourdomain.com"
+titleHome = "Your Site Name"
+
+## Twitter Cards
+twitterSite = "@yourhandle"
+twitterCreator = "@yourhandle"
+
+## JSON-LD
+# schemaType = "Person"
+schemaType = "Organization"
+schemaName = "Your Organization Name"
+schemaAuthor = "Your Name"
+schemaAuthorTwitter = "https://twitter.com/yourhandle"
+schemaAuthorLinkedIn = "https://www.linkedin.com/company/yourcompany"
+schemaAuthorGitHub = "https://github.com/yourorg"
+schemaLocale = "en-US"
+schemaLogo = "images/default-og-image.png"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaImage = "images/default-og-image.png"
+schemaImageWidth = 1280
+schemaImageHeight = 640
+schemaTwitter = "https://twitter.com/yourhandle"
+schemaLinkedIn = "https://www.linkedin.com/company/yourcompany"
+schemaGitHub = "https://github.com/yourorg"
+schemaSection = "blog"
+
+# Images
+favicon = "images/favicon.png"
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+smallLimit = "300"
+
+### Image template
+defaultImage = "default-image.png" # put in `./assets/images/`
+fillImage = "1270x740 Center" # normalize image size
+
+# Google Tag Manager
+googleTagManagerId = ""
