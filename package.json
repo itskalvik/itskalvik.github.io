@@ -14,6 +14,7 @@
     "start": "concurrently \"exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender\" \"npm run tw:watch\"",
     "prebuild": "npm run clean",
     "build": "npm run tw:build && exec-bin node_modules/.bin/hugo/hugo --gc --minify",
+    "build:netlify": "npm run tw:build && exec-bin node_modules/.bin/hugo/hugo --gc --minify --enableGitInfo -b $DEPLOY_PRIME_URL",
     "build:preview": "npm run tw:build && exec-bin node_modules/.bin/hugo/hugo --gc --minify -D -F",
     "clean": "shx rm -rf public resources",
     "clean:install": "shx rm -rf package-lock.json node_modules ",

@@ -1,5 +1,5 @@
 baseurl = "http://localhost:1313/"
-title = "Site Title"
+title = "Kalvik Jakkala"
 canonifyURLs = false
 disableAliases = false
 disableHugoGeneratorInject = true
