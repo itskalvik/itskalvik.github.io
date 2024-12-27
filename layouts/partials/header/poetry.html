@@ -1,16 +1,18 @@
 {{ $current := .Page.RelPermalink }}
 <nav
-  class="container flex justify-between my-3 items-center">
+  class="container flex justify-between mt-6 items-center">
   <a href="/" class="text-xl font-semibold">
+    <img src="/images/text-logo.png" alt="{{ site.Title }}" class="h-8 object-cover" />
   </a>
   <div class="hidden lg:flex gap-x-8 items-center">
-    {{ range site.Menus.main }}
+    {{ range site.Menus.poetry }}
       <div class="relative group">
         <a
           href="{{ .URL }}"
-          class="flex gap-x-2 items-center font-semibold w-fit text-base lg:text-lg hover:text-primary transition-colors duration-200
-        leading-tight {{ if eq $current (print .URL "/") }}
-            text-primary
+          class="flex gap-x-2 items-center font-semibold w-fit text-lg lg:text-xl hover:text-darkgreen 
+          transition-colors duration-200 leading-tight 
+          {{ if eq $current (print .URL "/") }}
+            text-darkgreen
           {{ else }}
             text-dark
           {{ end }}"
@@ -31,7 +33,7 @@
               {{ range .Children }}
                 <a
                   href="{{ .URL }}"
-                  class="font-medium w-fit text-sm lg:text-base hover:text-primary transition-colors duration-200 leading-tight">
+                  class="font-medium w-fit text-sm lg:text-base hover:text-darkgreen transition-colors duration-200 leading-tight">
                   {{ .Name }}
                 </a>
               {{ end }}

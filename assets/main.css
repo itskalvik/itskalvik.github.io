@@ -9,6 +9,6 @@
   body {
     padding: 0;
     margin: 0;
-    @apply font-baskerville bg-gradient-to-br from-book to-light;
+    @apply font-baskerville bg-light;
   }
 }

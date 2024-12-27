@@ -1,14 +1,12 @@
 <section id="about" class="w-full container flex flex-col lg:flex-row gap-x-8 gap-y-12 my-24">
-  <div class="w-full lg:w-1/2 prose 2xl:prose-xl prose-slate prose-headings:font-bold prose-headings:text-darkgreen 
-  prose-h2:text-4xl prose-h2:font-bold prose-h2:text-darkgreen prose-h2:mb-4
-  font-light prose-p:text-darkgreen/80 prose-a:text-darkgreen prose-a:underline prose-a:underline-offset-4">
+  <div class="w-full lg:w-1/2 prose 2xl:prose-xl prose-slate prose-headings:font-bold prose-headings:text-dark 
+  prose-h2:text-4xl prose-h2:font-bold prose-h2:text-dark prose-h2:mb-4
+  font-light prose-p:text-dark/80 prose-a:text-dark prose-a:underline prose-a:underline-offset-4">
     {{ .Params.about.text | markdownify }}
   </div>
   <div class="w-full lg:w-1/2 flex flex-col justify-center items-center">
     <img src="{{ .Params.about.image }}" alt="About Image" class="w-64 rounded-full">
-    <h3 class="text-3xl font-bold text-darkgreen mt-4">{{ .Params.about.title }}</h3>
-    <h5 class="text-lg text-green">{{ .Params.about.subtitle }}</h5>
-    <div class="flex flex-wrap justify-start gap-2 lg:gap-x-6 mt-4">
+    <div class="flex flex-wrap justify-start gap-2 lg:gap-x-6 mt-8">
       {{ range .Params.about.social }}
         <a href="{{ .url }}" class="h-6 hover:opacity-50 transition-opacity duration-300">
           <img src="{{ .icon }}" alt="{{ .name }}" class="w-full h-full">

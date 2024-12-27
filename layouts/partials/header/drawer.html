@@ -7,14 +7,14 @@
   class="drawer fixed right-0 top-0 h-full w-64 bg-light shadow-md z-50">
   <div class="p-4 flex flex-col gap-y-6">
     <a href="/">
-      {{ site.Params.title }}
+      <img src="/images/text-logo.png" alt="{{ site.Title }}" class="h-8 object-cover" />
     </a>
-    {{ range site.Menus.main }}
+    {{ range site.Menus.poetry }}
       <a
         href="{{ .URL }}"
-        class="font-medium w-fit text-base lg:text-lg hover:text-gradient 
+        class="font-medium w-fit text-base lg:text-lg hover:text-darkgreen 
         leading-tight {{ if eq $current (print .URL "/") }}
-          text-primary
+          text-darkgreen
         {{ else }}
           text-dark
         {{ end }}"
@@ -25,9 +25,9 @@
         {{ range .Children }}
           <a
             href="{{ .URL }}"
-            class="font-medium w-fit text-base lg:text-lg hover:text-gradient ml-6
+            class="font-medium w-fit text-base lg:text-lg hover:text-darkgreen ml-6
           leading-tight {{ if eq $current (print .URL "/") }}
-              text-primary
+              text-darkgreen
             {{ else }}
               text-dark
             {{ end }}"

@@ -1,7 +1,7 @@
 <section id="tour" class="w-full container my-24">
-  <h3 class="text-4xl font-bold text-darkgreen">{{ .Params.tour.title }}</h3>
-  <div class="prose 2xl:prose-xl prose-headings:font-bold prose-headings:text-darkgreen mt-4 text-darkgreen/80
-  font-light prose-p:text-darkgreen/80 prose-a:text-darkgreen prose-a:underline prose-a:underline-offset-4">
+  <h3 class="text-4xl font-bold text-dark">{{ .Params.tour.title }}</h3>
+  <div class="prose 2xl:prose-xl prose-headings:font-bold prose-headings:text-dark mt-4 text-dark/80
+  font-light prose-p:text-dark/80 prose-a:text-dark prose-a:underline prose-a:underline-offset-4">
     {{ .Params.tour.description | markdownify }}
   </div>
   <div class="relative h-full">
@@ -11,21 +11,21 @@
     <div class="flex flex-col gap-y-8 mt-8">
       {{ range .Params.tour.events }}
         <div class="flex gap-x-4">
-          <div class="w-4 h-4 bg-darkgreen rounded-full mt-2 z-10"></div>
+          <div class="w-4 h-4 bg-dark rounded-full mt-2 z-10"></div>
           <div class="flex flex-col gap-y-2">
             <div class="flex lg:flex-row flex-col lg:items-center gap-x-8">
-              <a href="{{ .url }}" class="text-2xl font-bold text-darkgreen
+              <a href="{{ .url }}" class="text-2xl font-bold text-dark
               hover:opacity-50 transition-opacity duration-150">
                 {{ .title }}
               </a>
               <div class="flex gap-x-2">
-                <h5 class="text-sm text-darkgreen/80">{{ .date }}</h5>
-                <h5 class="text-sm text-darkgreen/80">- {{ .time }}</h5>
+                <h5 class="text-sm text-dark/80">{{ .date }}</h5>
+                <h5 class="text-sm text-dark/80">- {{ .time }}</h5>
               </div>
             </div>
             <div class="flex flex-col gap-y-2">
-              <h5 class="text-base text-darkgreen/80">{{ .description }}</h5>
-              <h5 class="text-base text-darkgreen/80">{{ .location }}</h5>
+              <h5 class="text-base text-dark/80">{{ .description }}</h5>
+              <h5 class="text-base text-dark/80">{{ .location }}</h5>
             </div>
           </div>
         </div>

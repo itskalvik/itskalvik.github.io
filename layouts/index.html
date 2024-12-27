@@ -1,7 +1,15 @@
 {{ define "main" }}
-  {{ partial "home/book-cover" . }}
-  {{ partial "home/about" . }}
-  {{ partial "home/tour" . }}
-  {{ partial "home/watch" . }}
-  {{ partial "home/contact" . }}
+  <div class="flex flex-col items-center justify-center pt-40 pb-20">
+    <img src="{{ .Params.logo }}" alt="{{ .Title }}" class="w-3/4 lg:w-1/2 h-auto">
+    <div class="flex flex-wrap items-center justify-center mt-12 gap-6">
+      {{ range .Params.links }}
+          <a href="{{ .url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold 
+          text-dark border-2 border-dark transition-all w-full lg:w-fit text-center lg:text-left 2xl:text-xl
+          hover:bg-dark hover:text-white">
+            {{ .name }}
+          </a>
+        {{ end }}
+    </div>
+  </div>
 {{ end }}
+

@@ -7,7 +7,7 @@ description = "Kalvik Jakkala's personal website"
 baseURL = "/"
 
 ## Open Graph
-images = ["images/default-og-image.png"]
+images = ["images/og-image.jpg"]
 ogLocale = "en_US"
 domainTLD = "itskalvik.com"
 titleHome = "Kalvik Jakkala"
@@ -27,7 +27,7 @@ schemaLocale = "en-US"
 schemaLogo = "images/logo.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "images/default-og-image.png"
+schemaImage = "images/og-image.jpg"
 schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/itskalvik"
