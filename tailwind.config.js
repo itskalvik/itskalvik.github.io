@@ -14,17 +14,19 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#e58a52",
-        secondary: "#78a162",
+        primary: "#1d4ed8",
         dark: "#27272A",
         darker: "#17181C",
         light: "#FAFAFB",
+        book: "#fefae0",
+        darkgreen: "#283618",
+        green: "#606c38",
       },
       fontFamily: {
-        inter: ["Inter", ...defaultTheme.fontFamily.sans],
+        baskerville: ["Libre Baskerville", ...defaultTheme.fontFamily.serif],
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
   safelist: [],
 };

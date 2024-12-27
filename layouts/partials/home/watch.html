@@ -1,0 +1,40 @@
+<section id="watch" class="w-full container my-24">
+  <h3 class="text-4xl font-bold text-darkgreen">{{ .Params.watch.title }}</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+    {{ range $index, $video := .Params.watch.videos }}
+      {{ $videoid := index (split .url "=") 1 }}
+      <div class="w-full flex flex-col gap-y-4">
+        <div class="aspect-video video-placeholder relative" id="video-{{ $index }}" onclick="loadVideo({{ $index }}, {{ $videoid }})">
+          <img
+            id="video-{{ $index }}-img"
+            src="https://img.youtube.com/vi/{{ $videoid }}/maxresdefault.jpg"
+            alt="{{ .title }}"
+            class="w-full h-full object-cover absolute top-0 left-0 cursor-pointer 
+            hover:opacity-50 transition-opacity duration-300 rounded-lg"
+          />
+          <button 
+            id="video-{{ $index }}-btn"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </button>
+        </div>
+        <h5 class="text-2xl font-bold text-darkgreen">{{ .title }}</h5>
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+<script>
+  function loadVideo(index, videoid) {
+    var iframe = document.createElement('iframe');
+    iframe.frameBorder = 0;
+    iframe.allowFullscreen = true;
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.classList.add('w-full', 'h-full');
+    iframe.src = "https://www.youtube.com/embed/" + videoid + "?autoplay=1";
+    document.getElementById('video-' + index).appendChild(iframe);
+    document.getElementById('video-' + index + '-img').classList.add('hidden');
+    document.getElementById('video-' + index + '-btn').classList.add('hidden');
+  }
+</script>

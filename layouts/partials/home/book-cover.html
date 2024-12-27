@@ -1,0 +1,43 @@
+<section id="book" class="w-full container flex flex-col gap-12">
+  <div class="flex flex-col lg:flex-row gap-x-8 gap-y-12 mt-8 lg:mt-24">
+    <div class="w-full h-full lg:w-1/2 relative">
+      <div class="relative flex justify-center items-center">
+        <img
+          src="{{ .Params.book.images.front }}" 
+          alt="Book Cover" 
+          class="max-w-[70%] max-h-[70%] rounded-lg z-20 relative"
+        >
+        <img
+          src="{{ .Params.book.images.back }}" 
+          alt="Book Cover" 
+          class="hidden lg:block absolute rounded-lg -top-[10%] left-[5%] w-full h-full max-w-[70%] max-h-[100%] object-cover z-0"
+        >
+        <div 
+          class="hidden lg:block absolute rounded-lg -top-[10%] left-[5%] w-full h-full max-w-[70%] max-h-[100%] 
+          object-cover bg-black/50 z-10"></div>
+      </div>
+    </div>
+    <div class="w-full lg:w-1/2">
+      <h2 class="text-5xl font-bold text-darkgreen mb-4">{{ .Params.book.title }}</h2>
+      <div class="prose 2xl:prose-xl prose-headings:font-bold prose-headings:text-darkgreen 
+      font-light prose-p:text-darkgreen/80 prose-a:text-darkgreen prose-a:underline prose-a:underline-offset-4
+      prose-li:text-darkgreen/80">
+        {{ .Params.book.description | markdownify }}
+      </div>
+      <div class="flex flex-wrap justify-start gap-2 mt-12">
+        {{ range .Params.book.links }}
+          <a href="{{ .url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold 
+          text-dark border-2 border-dark transition-all w-full lg:w-fit text-center lg:text-left
+          hover:bg-dark hover:text-white">
+            {{ .name }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="prose 2xl:prose-xl prose-slate prose-headings:font-bold prose-headings:text-darkgreen 
+  font-light prose-p:text-darkgreen/80 prose-a:text-darkgreen prose-a:underline prose-a:underline-offset-4 
+  prose-strong:text-darkgreen prose-strong:font-bold max-w-none w-full">
+    {{ .Params.book.text | markdownify }}
+  </div>
+</section>
