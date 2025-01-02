@@ -1203,6 +1203,10 @@ html:is(.dark *),
   top: 0px;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
 .top-1\/2 {
   top: 50%;
 }
