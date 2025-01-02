@@ -30,12 +30,12 @@ url = "#contact"
 [[research]]
 name = "Bio"
 weight = 10
-url = "#bio"
+url = "/research/#bio"
 
 [[research]]
 name = "Blog"
 weight = 20
-url = "#blog"
+url = "/research/#blog"
 
 [[research]]
 name = "Experience"
@@ -45,11 +45,11 @@ url = "/research/experience"
 [[research]]
 name = "Projects"
 weight = 40
-url = "#projects"
+url = "/research/#projects"
 
 [[research]]
 name = "Publications"
 weight = 50
-url = "#publications"
+url = "/research/#publications"
 
 

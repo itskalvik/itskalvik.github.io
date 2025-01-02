@@ -10,3 +10,10 @@
   integrity="{{ $script.Data.Integrity }}" 
   crossorigin="anonymous"
 ></script>
+
+{{ $hb_theme := resources.Get "js/hb-theme.js" | minify | fingerprint "sha512"}}
+<script 
+  src="{{ $hb_theme.Permalink }}" 
+  integrity="{{ $hb_theme.Data.Integrity }}" 
+  crossorigin="anonymous"
+></script>

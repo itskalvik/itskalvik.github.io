@@ -1,11 +1,13 @@
 {{ define "main" }}
-  <div class="flex flex-col items-center justify-center pt-40 pb-20 font-inter">
-    <img src="{{ .Params.logo }}" alt="{{ .Title }}" class="w-3/4 lg:w-1/2 h-auto">
-    <div class="flex flex-wrap items-center justify-center mt-12 gap-6">
+  <div class="flex flex-col items-center justify-center pt-40 pb-28 2xl:pb-40 font-inter">
+    <img src="{{ .Params.logo }}" alt="{{ .Title }}" class="w-3/4 lg:w-[35%] h-auto dark:hidden">
+    <img src="{{ .Params.logo_white }}" alt="{{ .Title }}" class="w-3/4 lg:w-[35%] h-auto hidden dark:block">
+    <div class="flex items-center justify-center mt-16 lg:gap-16 gap-10">
       {{ range .Params.links }}
           <a href="{{ .url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold 
-          text-dark border-2 border-dark transition-all w-full lg:w-fit text-center lg:text-left 2xl:text-xl
-          hover:bg-dark hover:text-white">
+          text-darker border-2 border-darker transition-all w-full lg:w-fit text-center lg:text-left 2xl:text-xl
+          hover:bg-darker hover:text-white dark:hover:bg-light dark:hover:text-dark dark:border-light
+          dark:text-light">
             {{ .name }}
           </a>
         {{ end }}

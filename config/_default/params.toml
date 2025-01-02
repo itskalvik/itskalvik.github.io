@@ -36,7 +36,7 @@ schemaGitHub = "https://github.com/itskalvik"
 schemaSection = "blog"
 
 # Images
-favicon = "images/favicon.png"
+favicon = "/images/favicon.png"
 quality = 85
 bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
@@ -46,3 +46,9 @@ smallLimit = "300"
 
 # Google Tag Manager
 googleTagManagerId = ""
+
+[header]
+show_theme_chooser = true
+
+[appearance]
+mode = "system"

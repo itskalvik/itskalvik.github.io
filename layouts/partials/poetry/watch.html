@@ -1,5 +1,5 @@
 <section id="watch" class="w-full container my-24">
-  <h3 class="text-4xl font-bold text-dark">{{ .Params.watch.title }}</h3>
+  <h3 class="text-4xl font-bold text-dark dark:text-light">{{ .Params.watch.title }}</h3>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
     {{ range $index, $video := .Params.watch.videos }}
       {{ $videoid := index (split .url "=") 1 }}
@@ -19,7 +19,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
           </button>
         </div>
-        <h5 class="text-2xl font-bold text-dark">{{ .title }}</h5>
+        <h5 class="text-2xl font-bold text-dark dark:text-light">{{ .title }}</h5>
       </div>
     {{ end }}
   </div>

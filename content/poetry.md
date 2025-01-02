@@ -27,8 +27,10 @@ about:
   social:
     - url: https://instagram.com/itskalvik
       icon: /svg/instagram.svg
+      icon_white: /svg/instagram-white.svg
     - url: https://youtube.com/itskalvik
       icon: /svg/youtube.svg
+      icon_white: /svg/youtube-white.svg
   text: |
     ## About the author
 

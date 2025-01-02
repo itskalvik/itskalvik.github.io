@@ -37,6 +37,6 @@
   body {
     padding: 0;
     margin: 0;
-    @apply bg-light;
+    @apply bg-light dark:bg-darker min-h-screen;
   }
 }

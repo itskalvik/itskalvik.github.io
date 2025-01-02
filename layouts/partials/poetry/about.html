@@ -1,7 +1,9 @@
 <section id="about" class="w-full container flex flex-col lg:flex-row gap-x-8 gap-y-12 my-24">
   <div class="w-full lg:w-1/2 prose 2xl:prose-xl prose-slate prose-headings:font-bold prose-headings:text-dark 
   prose-h2:text-4xl prose-h2:font-bold prose-h2:text-dark prose-h2:mb-4
-  font-light prose-p:text-dark/80 prose-a:text-dark prose-a:underline prose-a:underline-offset-4">
+  font-light prose-p:text-dark/80 prose-a:text-dark prose-a:underline prose-a:underline-offset-4
+  dark:prose-headings:text-light dark:prose-p:text-light/80 dark:prose-a:text-light
+  dark:prose-strong:text-light dark:prose-strong:font-bold">
     {{ .Params.about.text | markdownify }}
   </div>
   <div class="w-full lg:w-1/2 flex flex-col justify-center items-center">
@@ -9,7 +11,8 @@
     <div class="flex flex-wrap justify-start gap-2 lg:gap-x-6 mt-8">
       {{ range .Params.about.social }}
         <a href="{{ .url }}" class="h-6 hover:opacity-50 transition-opacity duration-300">
-          <img src="{{ .icon }}" alt="{{ .name }}" class="w-full h-full">
+          <img src="{{ .icon }}" alt="{{ .name }}" class="w-full h-full dark:hidden">
+          <img src="{{ .icon_white }}" alt="{{ .name }}" class="w-full h-full hidden dark:block">
         </a>
       {{ end }}
     </div>

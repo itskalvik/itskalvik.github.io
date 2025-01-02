@@ -1,0 +1,25 @@
+<script>
+  /* Hugo Blox JS Global Init */
+  window.hbb = {
+     defaultTheme: document.documentElement.dataset.wcThemeDefault,
+     setDarkTheme: () => {
+      document.documentElement.classList.add("dark");
+      document.documentElement.style.colorScheme = "dark";
+    },
+     setLightTheme: () => {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.style.colorScheme = "light";
+    }
+  }
+
+  console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+  if ("wc-color-theme" in localStorage) {
+    localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+  } else {
+    window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    if (window.hbb.defaultTheme === "system") {
+      window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    }
+  }
+</script>

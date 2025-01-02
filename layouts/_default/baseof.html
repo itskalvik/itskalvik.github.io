@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
+<html 
+  lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}"
+  data-wc-theme-default="{{ (lower site.Params.appearance.mode) | default "system" }}"
+>
   {{ partial "head/head" . }}
   {{ if eq .Kind "home" -}}
     {{ .Scratch.Set "class" "home" -}}
