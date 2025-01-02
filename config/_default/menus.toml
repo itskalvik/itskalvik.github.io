@@ -1,3 +1,5 @@
+# Poetry
+
 [[poetry]]
 name = "Book"
 weight = 1
@@ -22,3 +24,32 @@ url = "#watch"
 name = "Contact"
 weight = 5
 url = "#contact"
+
+# Research
+
+[[research]]
+name = "Bio"
+weight = 10
+url = "#bio"
+
+[[research]]
+name = "Blog"
+weight = 20
+url = "#blog"
+
+[[research]]
+name = "Experience"
+weight = 30
+url = "/research/experience"
+
+[[research]]
+name = "Projects"
+weight = 40
+url = "#projects"
+
+[[research]]
+name = "Publications"
+weight = 50
+url = "#publications"
+
+

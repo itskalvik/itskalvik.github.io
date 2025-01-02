@@ -1,8 +1,10 @@
 {{ define "main" }}
-  {{ partial "header/poetry" . }}
-  {{ partial "poetry/book-cover" . }}
-  {{ partial "poetry/about" . }}
-  {{ partial "poetry/tour" . }}
-  {{ partial "poetry/watch" . }}
-  {{ partial "poetry/contact" . }}
+  <div class="font-baskerville flex flex-col">
+    {{ partial "header/poetry" . }}
+    {{ partial "poetry/book-cover" . }}
+    {{ partial "poetry/about" . }}
+    {{ partial "poetry/tour" . }}
+    {{ partial "poetry/watch" . }}
+    {{ partial "poetry/contact" . }}
+  </div>
 {{ end }}

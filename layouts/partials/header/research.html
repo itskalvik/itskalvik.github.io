@@ -1,0 +1,52 @@
+{{ $current := .Page.RelPermalink }}
+<nav
+  class="container flex justify-between mt-6 items-center">
+  <a href="/" class="text-xl font-semibold">
+    <img src="/images/text-logo.png" alt="{{ site.Title }}" class="h-8 object-cover" />
+  </a>
+  <div class="hidden lg:flex gap-x-8 items-center">
+    {{ range site.Menus.research }}
+      <div class="relative group">
+        <a
+          href="{{ .URL }}"
+          class="flex gap-x-2 items-center font-semibold w-fit text-lg lg:text-xl hover:text-darkgreen 
+          transition-colors duration-200 leading-tight 
+          {{ if eq $current (print .URL "/") }}
+            text-darkgreen
+          {{ else }}
+            text-dark
+          {{ end }}"
+          {{ with .Params.rel }}rel="{{ . }}" target="_blank"{{ end }}>
+          {{ .Name }}
+          {{ if .HasChildren }}
+            <img
+              src="/svg/chevron-down.svg"
+              alt="chevron down"
+              class="w-4 h-4 group-hover:rotate-180 transition-all duration-200" />
+          {{ end }}
+        </a>
+        {{ if .HasChildren }}
+          <div
+            class="absolute top-[100%] -left-[50%] p-4 w-[350px] hidden group-hover:flex">
+            <div
+              class="flex flex-col gap-y-4 p-4 w-full rounded-lg border border-zinc-200 bg-white">
+              {{ range .Children }}
+                <a
+                  href="{{ .URL }}"
+                  class="font-medium w-fit text-sm lg:text-base hover:text-darkgreen transition-colors duration-200 leading-tight">
+                  {{ .Name }}
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+  <div class="flex lg:hidden gap-x-4">
+    <button class="px-2" id="toggleDrawer">
+      <img src="/svg/menu.svg" alt="menu" class="w-5 h-5 -translate-y-1" />
+    </button>
+  </div>
+  {{ partial "header/drawer" . }}
+</nav>
