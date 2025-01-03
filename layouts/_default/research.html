@@ -1,6 +1,6 @@
 {{ define "main" }}
-  <div class="font-inter flex flex-col">
+  <div class="font-inter flex flex-col" style="gap: {{ .Params.design.spacing | default "5rem" }}";>
     {{ partial "header/research.html" . }}
-    <h1>Research</h1>
+    {{ partial "research/resume-biography-3.html" . }}
   </div>
 {{ end }}

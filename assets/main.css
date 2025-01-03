@@ -32,6 +32,58 @@
   --color-secondary-950: 8 51 68;
 }
 
+#profile {
+  text-align: center;
+  padding: 30px 10px;
+  position: relative;
+}
+
+.avatar {
+  width: auto;
+  height: auto;
+  max-width: 225px;
+  max-height: 225px;
+  object-fit: cover;
+}
+
+.network-icon {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#profile .network-icon {
+  margin-top: 0.5rem;
+}
+
+.network-icon li {
+  margin-right: 10px;
+  @media (max-width: 640px) {
+    /* Min 48px Lighthouse tap targets on mobile */
+    margin-right: 12px;
+  }
+}
+
+.network-icon li:last-of-type {
+  margin-right: 0;
+}
+
+.network-icon li:hover {
+  transform: scale(1.2);
+}
+
+.big-icon {
+  font-size: 2rem;
+}
+
+.ul-interests li {
+  font-size: 0.9rem;
+}
+
 @layer base {
   html,
   body {
