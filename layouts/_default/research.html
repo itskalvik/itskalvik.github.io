@@ -1,6 +1,10 @@
 {{ define "main" }}
-  <div class="font-inter flex flex-col" style="gap: {{ .Params.design.spacing | default "5rem" }}";>
+  {{ $page := . }}
+  <div class="font-inter flex flex-col" style="gap: {{ $page.Params.design.spacing | default "5rem" }}";>
     {{ partial "header/research.html" . }}
     {{ partial "research/resume-biography-3.html" . }}
+    {{ range $page.Params.collections }}
+      {{ partial "research/collection.html" (dict "wcPage" $page "wcBlock" .) }}
+    {{ end }}
   </div>
 {{ end }}

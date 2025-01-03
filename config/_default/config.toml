@@ -35,6 +35,9 @@ priority = 0.5
 contributor = "contributors"
 category = "categories"
 tag = "tags"
+author = "authors"
+publication_type = "publication_types"
+
 
 [minify.tdewolff.html]
 keepWhitespace = false

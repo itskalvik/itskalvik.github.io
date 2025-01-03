@@ -10,7 +10,7 @@
 */}}
 
 {{/* Search for an image "*featured*" in page folder */}}
-{{ $resource := (.Resources.ByType "image").GetMatch "*featured*" }}
+{{ $resource := (.Resources.ByType "image").GetMatch "**featured*" }}
 {{ if eq $resource nil }}
   {{/* Otherwise fall back the image file specified in front matter */}}
   {{ $filename := .Params.image.filename }}
