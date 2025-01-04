@@ -47,8 +47,12 @@ smallLimit = "300"
 # Google Tag Manager
 googleTagManagerId = ""
 
+[math]
+enable = true
+
 [header]
 show_theme_chooser = true
 
 [appearance]
 mode = "system"
+

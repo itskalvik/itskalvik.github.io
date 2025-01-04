@@ -1,6 +1,5 @@
 ---
 title: Tutorial on streaming sparse Gaussian processes
-layout: "research-post"
 subtitle: 
 
 ## Summary for listings and search engines

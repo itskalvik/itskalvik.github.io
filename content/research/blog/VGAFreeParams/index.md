@@ -1,6 +1,5 @@
 ---
 title: Variational Gaussian approximation with only $O(N)$ free parameters
-layout: "research-post"
 subtitle: 
 
 # Summary for listings and search engines

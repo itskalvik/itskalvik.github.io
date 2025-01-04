@@ -1,6 +1,5 @@
 ---
 title: "GaitSADA: Self-Aligned Domain Adaptation for mmWave Gait Recognition"
-layout: "publication-post"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here

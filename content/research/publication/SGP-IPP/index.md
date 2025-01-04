@@ -1,6 +1,5 @@
 ---
 title: "Multi-Robot Informative Path Planning from Regression with Sparse Gaussian Processes"
-layout: "publication-post"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here

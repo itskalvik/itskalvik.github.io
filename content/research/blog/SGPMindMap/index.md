@@ -1,6 +1,5 @@
 ---
 title: Taxonomy of Key Sparse Gaussian Process Approaches
-layout: "research-post"
 subtitle: 
 
 ## Summary for listings and search engines

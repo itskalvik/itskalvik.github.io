@@ -1,6 +1,5 @@
 ---
 title: Tutorial on Gaussian Processes
-layout: "research-post"
 subtitle: 
 
 ## Summary for listings and search engines

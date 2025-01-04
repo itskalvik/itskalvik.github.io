@@ -1,6 +1,5 @@
 ---
 title: Conjugate-Computation Variational Inference (CVI)
-layout: "research-post"
 subtitle: 
 
 # Summary for listings and search engines

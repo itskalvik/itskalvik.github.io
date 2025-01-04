@@ -1,6 +1,5 @@
 ---
 title: Simultaneous Optimization of Assignments and Goal Formations for Multiple Robots with Variable Rotation, Scale and Translation
-layout: "research-post"
 subtitle: 
 
 # Summary for listings and search engines

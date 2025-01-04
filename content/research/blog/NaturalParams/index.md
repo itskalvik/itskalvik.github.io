@@ -1,6 +1,5 @@
 ---
 title: What is so natural about the seemingly unnatural "natural parameters"?
-layout: "research-post"
 subtitle: 
 
 # Summary for listings and search engines

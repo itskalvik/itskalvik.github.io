@@ -1,6 +1,5 @@
 ---
 title: "Stochastic gradient Markov chain Monte Carlo (SGMCMC) methods"
-layout: "research-post"
 subtitle: 
 
 ## Summary for listings and search engines

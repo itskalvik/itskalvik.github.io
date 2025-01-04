@@ -1,6 +1,5 @@
 ---
 title: "Efficient Sensor Placement from Regression with Sparse Gaussian Processes in Continuous and Discrete Spaces"
-layout: "publication-post"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here

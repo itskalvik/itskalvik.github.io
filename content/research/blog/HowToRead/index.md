@@ -1,6 +1,5 @@
 ---
 title: "How to read an academic paper"
-layout: "research-post"
 subtitle: 
 
 ## Summary for listings and search engines

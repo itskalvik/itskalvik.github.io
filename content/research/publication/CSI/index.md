@@ -1,6 +1,5 @@
 ---
 title: "Deep CSI Learning for Gait Biometric Sensing and Recognition"
-layout: "publication-post"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here

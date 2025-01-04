@@ -1,6 +1,5 @@
 ---
 title: "Bayes-Newton Methods for Approximate Bayesian Inference"
-layout: "research-post"
 subtitle: 
 
 # Summary for listings and search engines

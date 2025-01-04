@@ -1,6 +1,5 @@
 ---
 title: "Probabilistic Gas Leak Rate Estimation using Submodular Function Maximization with Routing Constraints"
-layout: "publication-post"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
