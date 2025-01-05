@@ -21,10 +21,11 @@
 {{ end }}
 
 {{ $style := resources.Get "style.css" }}
-<link rel="stylesheet" href="{{ $style.Permalink }}" />
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
 {{ $syntax := resources.Get "syntax.css" }}
-<link rel="stylesheet" href="{{ $syntax.Permalink }}" />
+<link rel="stylesheet" href="{{ $syntax.RelPermalink }}" />
 
 {{ partial "fonts" . }}
+
 

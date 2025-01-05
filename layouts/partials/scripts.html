@@ -6,14 +6,14 @@
 <!-- Main Script -->
 {{ $script := resources.Get "js/main.js" | minify | fingerprint "sha512"}}
 <script 
-  src="{{ $script.Permalink }}" 
+  src="{{ $script.RelPermalink }}" 
   integrity="{{ $script.Data.Integrity }}" 
   crossorigin="anonymous"
 ></script>
 
 {{ $hb_theme := resources.Get "js/hb-theme.js" | minify | fingerprint "sha512"}}
 <script 
-  src="{{ $hb_theme.Permalink }}" 
+  src="{{ $hb_theme.RelPermalink }}" 
   integrity="{{ $hb_theme.Data.Integrity }}" 
   crossorigin="anonymous"
 ></script>
