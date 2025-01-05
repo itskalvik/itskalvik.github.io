@@ -74,7 +74,8 @@
 
   <div class="flex lg:hidden gap-x-4">
     <button class="px-2" id="toggleDrawer">
-      <img src="/svg/menu.svg" alt="menu" class="w-5 h-5 -translate-y-1" />
+      <img src="/svg/menu.svg" alt="menu" class="w-5 h-5 -translate-y-1 dark:hidden" />
+      <img src="/svg/menu-white.svg" alt="menu" class="w-5 h-5 -translate-y-1 hidden dark:block" />
     </button>
   </div>
   {{ partial "header/drawer" . }}
