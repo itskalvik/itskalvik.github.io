@@ -2068,6 +2068,11 @@ details > summary:is(.dark *) {
   row-gap: 2rem;
 }
 
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -2416,6 +2421,11 @@ details > summary:is(.dark *) {
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .px-2 {
@@ -4312,6 +4322,21 @@ details > summary:is(.dark *) {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity, 1));
 }
 
+.dark\:bg-white:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:bg-dark:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:bg-darker:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 24 28 / var(--tw-bg-opacity, 1));
+}
+
 .dark\:from-primary-800:is(.dark *) {
   --tw-gradient-from: rgb(var(--color-primary-800) / 1) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(var(--color-primary-800) / 0) var(--tw-gradient-to-position);
@@ -4977,6 +5002,11 @@ details > summary:is(.dark *) {
     padding-right: 0.5rem;
   }
 
+  .lg\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -5063,6 +5093,10 @@ details > summary:is(.dark *) {
 
   .group:hover .lg\:group-hover\:opacity-100 {
     opacity: 1;
+  }
+
+  .dark\:lg\:hidden:is(.dark *) {
+    display: none;
   }
 }
 
