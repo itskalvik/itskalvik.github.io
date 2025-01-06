@@ -41,5 +41,11 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/typography")],
-  safelist: [],
+  safelist: [
+    {
+      /* For dynamic article-grid.start */
+      pattern: /grid-cols-+/,
+      variants: ["md"],
+    },
+  ],
 };

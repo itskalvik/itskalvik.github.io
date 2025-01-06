@@ -12,7 +12,7 @@
   {{ end }}
 {{ end }}
 
-<div class="mx-auto flex max-w-screen-xl">
+<div class="mx-auto flex max-w-screen-xl w-full">
   {{ partial "components/sidebar.html" (dict "context" . "no_sidebar" true) }}
   {{ partial "components/toc.html" . }}
   <article class="w-full break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
@@ -149,7 +149,7 @@
       </div>
       {{ end }}
 
-      <div class="prose prose-slate lg:prose-xl dark:prose-invert">
+      <div class="prose prose-slate lg:prose-xl dark:prose-invert overflow-x-scroll">
         {{ .Content }}
       </div>
 
