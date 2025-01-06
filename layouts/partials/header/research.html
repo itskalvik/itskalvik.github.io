@@ -1,64 +1,69 @@
 {{ $current := .Page.RelPermalink }}
-<nav
-  class="container flex justify-between mt-6 items-center">
-  <a href="/" class="text-xl font-semibold">
-    <img src="/images/text-logo.png" alt="{{ site.Title }}" class="h-8 object-cover dark:hidden" />
-    <img src="/images/text-logo-white.png" alt="{{ site.Title }}" class="h-8 object-cover hidden dark:block" />
-  </a>
-  <div class="hidden lg:flex gap-x-10 items-center">
-    {{ range site.Menus.research }}
-      <div class="relative group">
-        <a
-          href="{{ .URL }}"
-          class="flex gap-x-2 items-center font-semibold w-fit text-sm lg:text-base hover:text-primary-700 
-          transition-colors duration-200 leading-tight dark:hover:text-primary-700
-          {{ if eq $current (print .URL "/") }}
-            text-primary-700
-          {{ else }}
-            text-dark dark:text-light
-          {{ end }}"
-          {{ with .Params.rel }}rel="{{ . }}" target="_blank"{{ end }}>
-          {{ .Name }}
+<div class="flex flex-col-reverse gap-y-8 w-full relative">
+  {{ $show_search := site.Params.header.show_search | default false }}
+  {{ if $show_search }}
+    <div id="search" class="container hidden p-3"></div>
+  {{ end }}
+  <nav
+    class="container flex justify-between mt-6 items-center">
+    <a href="/" class="text-xl font-semibold">
+      <img src="/images/text-logo.png" alt="{{ site.Title }}" class="h-8 object-cover dark:hidden" />
+      <img src="/images/text-logo-white.png" alt="{{ site.Title }}" class="h-8 object-cover hidden dark:block" />
+    </a>
+    <div class="hidden lg:flex gap-x-10 items-center">
+      {{ range site.Menus.research }}
+        <div class="relative group">
+          <a
+            href="{{ .URL }}"
+            class="flex gap-x-2 items-center font-semibold w-fit text-sm lg:text-base hover:text-primary-700 
+            transition-colors duration-200 leading-tight dark:hover:text-primary-700
+            {{ if eq $current (print .URL "/") }}
+              text-primary-700
+            {{ else }}
+              text-dark dark:text-light
+            {{ end }}"
+            {{ with .Params.rel }}rel="{{ . }}" target="_blank"{{ end }}>
+            {{ .Name }}
+            {{ if .HasChildren }}
+              <img
+                src="/svg/chevron-down.svg"
+                alt="chevron down"
+                class="w-4 h-4 group-hover:rotate-180 transition-all duration-200" />
+            {{ end }}
+          </a>
           {{ if .HasChildren }}
-            <img
-              src="/svg/chevron-down.svg"
-              alt="chevron down"
-              class="w-4 h-4 group-hover:rotate-180 transition-all duration-200" />
-          {{ end }}
-        </a>
-        {{ if .HasChildren }}
-          <div
-            class="absolute top-[100%] -left-[50%] p-4 w-[350px] hidden group-hover:flex">
             <div
-              class="flex flex-col gap-y-4 p-4 w-full rounded-lg border border-zinc-200 bg-white">
-              {{ range .Children }}
-                <a
-                  href="{{ .URL }}"
-                  class="font-medium w-fit text-sm lg:text-base hover:text-darkgreen transition-colors duration-200 leading-tight">
-                  {{ .Name }}
-                </a>
-              {{ end }}
+              class="absolute top-[100%] -left-[50%] p-4 w-[350px] hidden group-hover:flex">
+              <div
+                class="flex flex-col gap-y-4 p-4 w-full rounded-lg border border-zinc-200 bg-white">
+                {{ range .Children }}
+                  <a
+                    href="{{ .URL }}"
+                    class="font-medium w-fit text-sm lg:text-base hover:text-darkgreen transition-colors duration-200 leading-tight">
+                    {{ .Name }}
+                  </a>
+                {{ end }}
+              </div>
             </div>
-          </div>
-        {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+    
+    <div class="flex gap-x-4 items-center">
+      {{ partial "header/search-button" . }}
+      <div class="hidden lg:flex gap-x-2">
+        {{ partial "header/theme-picker" . }}
       </div>
-    {{ end }}
-  </div>
+      <div class="flex lg:hidden gap-x-4">
+        <button class="px-2 mt-2" id="toggleDrawer">
+          <img src="/svg/menu.svg" alt="menu" class="w-5 h-5 -translate-y-1 dark:hidden" />
+          <img src="/svg/menu-white.svg" alt="menu" class="w-5 h-5 -translate-y-1 hidden dark:block" />
+        </button>
+      </div>
+    </div>
+    {{ partial "header/drawer" (dict "menu" site.Menus.research "context" .) }}
+  </nav>
   
-  <div class="hidden lg:flex gap-x-2">
-    {{ partial "header/search-button" . }}
-    {{ partial "header/theme-picker" . }}
-  </div>
+</div>
 
-  <div class="flex lg:hidden gap-x-4">
-    <button class="px-2" id="toggleDrawer">
-      <img src="/svg/menu.svg" alt="menu" class="w-5 h-5 -translate-y-1 dark:hidden" />
-      <img src="/svg/menu-white.svg" alt="menu" class="w-5 h-5 -translate-y-1 hidden dark:block" />
-    </button>
-  </div>
-  {{ partial "header/drawer" (dict "menu" site.Menus.research "context" .) }}
-</nav>
-{{ $show_search := site.Params.header.show_search | default false }}
-{{ if $show_search }}
-  <div id="search" class="hidden p-3"></div>
-{{ end }}
