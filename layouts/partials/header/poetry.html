@@ -56,3 +56,8 @@
   </div>
   {{ partial "header/drawer" (dict "menu" site.Menus.poetry "context" .) }}
 </nav>
+
+{{ $show_search := site.Params.header.show_search | default false }}
+{{ if $show_search }}
+  <div id="search" class="hidden p-3"></div>
+{{ end }}
