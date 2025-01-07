@@ -10,10 +10,10 @@
       <div class="relative group">
         <a
           href="{{ .URL }}"
-          class="flex gap-x-2 items-center font-semibold w-fit text-base lg:text-lg hover:text-darkgreen 
-          transition-colors duration-200 leading-tight dark:hover:text-green
+          class="flex gap-x-2 items-center font-semibold w-fit text-base lg:text-lg leading-tight
+          hover:opacity-50 transition-opacity duration-150 
           {{ if eq $current (print .URL "/") }}
-            text-darkgreen
+            text-dark/50 dark:text-light/50
           {{ else }}
             text-dark dark:text-light
           {{ end }}"
@@ -51,7 +51,9 @@
 
   <div class="flex lg:hidden gap-x-4">
     <button class="px-2" id="toggleDrawer">
-      <img src="/svg/menu.svg" alt="menu" class="w-5 h-5 -translate-y-1" />
+      <img src="/svg/menu.svg" alt="menu" class="w-5 h-5 -translate-y-1 dark:hidden" />
+      <img src="/svg/menu-white.svg" alt="menu" class="w-5 h-5 -translate-y-1 hidden dark:block" />
+
     </button>
   </div>
   {{ partial "header/drawer" (dict "menu" site.Menus.poetry "context" .) }}

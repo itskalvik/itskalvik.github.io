@@ -15,10 +15,10 @@
         <div class="relative group">
           <a
             href="{{ .URL }}"
-            class="flex gap-x-2 items-center font-semibold w-fit text-sm lg:text-base hover:text-primary-700 
-            transition-colors duration-200 leading-tight dark:hover:text-primary-700
+            class="flex gap-x-2 items-center font-semibold w-fit text-sm lg:text-base leading-tight
+            hover:opacity-50 transition-opacity duration-150 
             {{ if eq $current (print .URL "/") }}
-              text-primary-700
+              text-dark/50 dark:text-light/50
             {{ else }}
               text-dark dark:text-light
             {{ end }}"

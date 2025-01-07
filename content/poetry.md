@@ -7,7 +7,7 @@ book:
     back: "/images/cover-back.jpg"
   title: Ain't Pretty Just Beautiful
   description: |
-    Ain't Pretty Just Beautiful is a poetry collection that narrates a tale of blood, sweat, and bliss.
+    **Ain't Pretty Just Beautiful is a poetry collection that narrates a tale of blood, sweat, and bliss.**
 
     In this evocative poetry collection, Kalvik Jakkala delves deep into the emotional landscapes of depression, anxiety, love, longing, and gratitude. With a unique poetic style that blends lyric, free verse, and blackout poetry, each poem captures the rawness of the human experience in a world overwhelmed by hustle culture and the distractions of social media. 
     
@@ -68,7 +68,7 @@ tour:
       url: https://www.google.com/maps
 
 watch:
-  title: "Watch more"
+  title: "Watch performances"
   videos:
     - title: "Test Video 1"
       url: https://www.youtube.com/watch?v=arj7oStGLkU

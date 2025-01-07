@@ -16,7 +16,7 @@
         class="relative block aspect-video"
         href="{{ $link }}" {{ $target | safeHTMLAttr }}>
         <img alt="{{ $item.Title | plainify }}"
-            class="object-cover transition-all"
+            class="object-contain transition-all"
             data-nimg="fill"
             decoding="async"
             fetchpriority="high" height="{{ .Height }}" loading="lazy" src="{{ .RelPermalink }}"

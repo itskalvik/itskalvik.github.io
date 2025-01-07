@@ -46,7 +46,7 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Google Tag Manager
-googleTagManagerId = ""
+googleTagManagerId = "G-Z2TVV3MF1S"
 
 [math]
 enable = true
@@ -56,4 +56,4 @@ show_theme_chooser = true
 show_search = true
 
 [appearance]
-mode = "system"
+mode = "light"

@@ -3,11 +3,13 @@
     <div class="w-full h-full lg:w-1/2 relative">
       <div class="relative flex justify-center items-center">
         <img
+          id="book-cover-front"
           src="{{ .Params.book.images.front }}" 
           alt="Book Cover" 
-          class="max-w-[70%] max-h-[70%] rounded-lg z-20 relative"
+          class="max-w-[70%] max-h-[70%] rounded-lg z-20 relative hover:scale-105 transition-all duration-200 cursor-pointer"
         >
         <img
+          id="book-cover-back"
           src="{{ .Params.book.images.back }}" 
           alt="Book Cover" 
           class="hidden lg:block absolute rounded-lg -top-[5%] left-0 w-full h-full max-w-[70%] max-h-[100%] object-cover z-0"
@@ -18,7 +20,7 @@
       </div>
     </div>
     <div class="w-full lg:w-1/2">
-      <h2 class="text-5xl font-bold text-dark dark:text-light mb-4">{{ .Params.book.title }}</h2>
+      <h2 class="text-5xl font-bold text-dark dark:text-light mb-4 pr-8 lg:pr-0">{{ .Params.book.title }}</h2>
       <div class="prose 2xl:prose-xl prose-headings:font-bold prose-headings:text-dark dark:prose-headings:text-light
       font-light prose-p:text-dark/80 prose-a:text-dark prose-a:underline prose-a:underline-offset-4
       prose-li:text-dark/80 dark:prose-p:text-light/80 dark:prose-a:text-light">

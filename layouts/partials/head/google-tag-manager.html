@@ -1,4 +1,4 @@
-{{ if .Site.Params.googleTagManagerId }}
+{{ if site.Params.googleTagManagerId }}
 <!-- Google Tag Manager -->
 <script>
   (function (w, d, s, l, i) {
@@ -15,7 +15,7 @@
     document,
     "script",
     "dataLayer",
-    "{{ .Site.Params.googleTagManagerId }}"
+    "{{ site.Params.googleTagManagerId }}"
   );
 </script>
 <!-- End Google Tag Manager -->
