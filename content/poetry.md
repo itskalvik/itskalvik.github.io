@@ -2,6 +2,7 @@
 title: "Poetry"
 layout: poetry
 book:
+  enabled: true
   images: 
     front: "/images/cover-front.jpg"
     back: "/images/cover-back.jpg"
@@ -21,6 +22,7 @@ book:
     - name: Get on Barnes and Noble
       url: https://barnesandnoble.com/
 about:
+  enabled: true
   image: "/images/kalvik.jpg"
   title: "Kalvik Jakkala"
   subtitle: "Postdoctoral Researcher"
@@ -38,6 +40,7 @@ about:
     
     In time, however, Kalvik discovered that the true essence of the dream was not something to chase but something to embody. Now a postdoctoral fellow at Texas A&M University, he spends his leisure time immersing himself in film photography, ballroom dancing, poetry, and the art of daydreaming.
 tour:
+  enabled: false
   title: "Tour dates"
   description: |
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -68,6 +71,7 @@ tour:
       url: https://www.google.com/maps
 
 watch:
+  enabled: false
   title: "Watch performances"
   videos:
     - title: "Test Video 1"
@@ -83,6 +87,7 @@ watch:
     - title: "Test Video 6"
       url: https://www.youtube.com/watch?v=GZGY0wPAnus
 contact:
+  enabled: true
   title: "Contact"
   description: "Have questions? Feel free to reach out using the form below."
 ---

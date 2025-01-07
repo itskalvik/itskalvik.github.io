@@ -47,6 +47,9 @@ smallLimit = "300"
 # Google Tag Manager
 googleTagManagerId = "G-Z2TVV3MF1S"
 
+# Contact Form
+formspreeId = "mkggpard"
+
 [math]
 enable = true
 

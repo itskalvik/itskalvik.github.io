@@ -1,35 +1,40 @@
-<section id="contact" class="w-full container my-10 lg:my-24">
-  <h3 class="text-4xl font-bold text-dark dark:text-light">{{ .Params.contact.title }}</h3>
-  <div class="prose 2xl:prose-xl prose-headings:font-bold prose-headings:text-dark mt-4 text-dark/80
-  font-light prose-p:text-dark/80 prose-a:text-dark prose-a:underline prose-a:underline-offset-4
-  dark:prose-headings:text-light dark:prose-p:text-light/80 dark:prose-a:text-light dark:text-light/80">
-    {{ .Params.contact.description | markdownify }}
-  </div>
-  <div class="w-full max-w-2xl mt-12">
-    <form class="space-y-4">
-      <input 
-        type="text" 
-        name="name" 
-        placeholder="Your name" 
-        class="w-full p-3 border border-dark/20 rounded-lg focus:outline-none focus:border-dark
-        dark:border-light/20 dark:text-light/80 text-dark dark:text-light">
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="Your email" 
-        class="w-full p-3 border border-dark/20 rounded-lg focus:outline-none focus:border-dark
-        dark:border-light/20 dark:text-light/80 text-dark dark:text-light">
-      <textarea 
-        name="message" 
-        rows="4" 
-        placeholder="Your message" 
-        class="w-full p-3 border border-dark/20 rounded-lg focus:outline-none focus:border-dark
-        dark:border-light/20 dark:text-light/80 text-dark dark:text-light">
-      </textarea>
-      <button type="submit" class="w-full bg-dark text-white py-3 px-6 rounded-lg 
-      hover:bg-dark transition-colors duration-300 hover:bg-dark/80">
-        Send Message
-      </button>
-    </form>
-  </div>
-</section> 
+{{ if .Params.contact.enabled }}
+  <section id="contact" class="w-full container my-10 lg:my-24">
+    <h3 class="text-4xl font-bold text-dark dark:text-light">{{ .Params.contact.title }}</h3>
+    <div class="prose 2xl:prose-xl prose-headings:font-bold prose-headings:text-dark mt-4 text-dark/80
+    font-light prose-p:text-dark/80 prose-a:text-dark prose-a:underline prose-a:underline-offset-4
+    dark:prose-headings:text-light dark:prose-p:text-light/80 dark:prose-a:text-light dark:text-light/80">
+      {{ .Params.contact.description | markdownify }}
+    </div>
+    <div class="w-full max-w-2xl mt-12">
+      <form action="https://formspree.io/f/{{ site.Params.formspreeId }}" method="POST" class="space-y-4">
+        <input 
+          type="text" 
+          name="name" 
+          placeholder="Your name" 
+          required
+          class="w-full p-3 border border-dark/20 rounded-lg focus:outline-none focus:border-dark
+          dark:border-light/20 dark:text-light/80 text-dark dark:text-light">
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="Your email" 
+          required
+          class="w-full p-3 border border-dark/20 rounded-lg focus:outline-none focus:border-dark
+          dark:border-light/20 dark:text-light/80 text-dark dark:text-light">
+        <textarea 
+          name="message" 
+          rows="4" 
+          placeholder="Your message" 
+          required
+          class="w-full p-3 border border-dark/20 rounded-lg focus:outline-none focus:border-dark
+          dark:border-light/20 dark:text-light/80 text-dark dark:text-light">
+        </textarea>
+        <button type="submit" class="w-full bg-dark text-white py-3 px-6 rounded-lg 
+        hover:bg-dark transition-colors duration-300 hover:bg-dark/80">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section> 
+{{ end }}
