@@ -10,15 +10,15 @@ name = "About"
 weight = 2
 url = "#about"
 
-[[poetry]]
-name = "Tour"
-weight = 3
-url = "#tour"
+# [[poetry]]
+# name = "Tour"
+# weight = 3
+# url = "#tour"
 
-[[poetry]]
-name = "Watch"
-weight = 4
-url = "#watch"
+# [[poetry]]
+# name = "Watch"
+# weight = 4
+# url = "#watch"
 
 [[poetry]]
 name = "Contact"
