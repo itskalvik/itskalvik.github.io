@@ -23,7 +23,7 @@ book:
       url: https://barnesandnoble.com/
 about:
   enabled: true
-  image: "/images/kalvik.jpg"
+  image: "/images/kalvik_poetry.jpeg"
   title: "Kalvik Jakkala"
   subtitle: "Postdoctoral Researcher"
   social:
