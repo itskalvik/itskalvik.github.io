@@ -1,7 +1,7 @@
 {{ define "main" }}
   <div class="flex flex-col items-center justify-center pt-40 pb-28 2xl:pb-40 font-inter">
-    <img src="{{ .Params.logo }}" alt="{{ .Title }}" class="w-3/4 lg:w-[35%] h-auto dark:hidden">
-    <img src="{{ .Params.logo_white }}" alt="{{ .Title }}" class="w-3/4 lg:w-[35%] h-auto hidden dark:block">
+    <img src="{{ .Params.logo }}" alt="{{ .Title }}" class="w-3/4 lg:w-[35%] h-auto dark:hidden mt-16">
+    <img src="{{ .Params.logo_white }}" alt="{{ .Title }}" class="w-3/4 lg:w-[35%] h-auto hidden dark:block mt-16">
     <div class="flex items-center justify-center mt-16 lg:gap-16 gap-10">
       {{ range .Params.links }}
           <a href="{{ .url }}" class="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold 
