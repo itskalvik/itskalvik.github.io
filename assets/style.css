@@ -1491,6 +1491,10 @@ details > summary:is(.dark *) {
   margin-top: 3rem;
 }
 
+.mt-r {
+  margin-top: 1rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -2469,6 +2473,10 @@ details > summary:is(.dark *) {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-0 {
