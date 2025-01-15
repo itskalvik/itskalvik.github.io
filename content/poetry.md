@@ -89,6 +89,6 @@ watch:
 contact:
   enabled: true
   title: "Contact"
-  description: "Have questions? Feel free to reach out using the form below."
+  description: "Have questions? Feel free to reach out using the form below:"
 ---
 
