@@ -33,23 +33,26 @@ weight = 10
 url = "/research/#bio"
 
 [[research]]
-name = "Blog"
+name = "Publications"
 weight = 20
+url = "/research/#publications"
+
+[[research]]
+name = "Projects"
+weight = 30
+url = "/research/#projects"
+
+[[research]]
+name = "Blog"
+weight = 40
 url = "/research/#blog"
 
 [[research]]
 name = "Experience"
-weight = 30
+weight = 50
 url = "/research/experience"
 
-[[research]]
-name = "Projects"
-weight = 40
-url = "/research/#projects"
 
-[[research]]
-name = "Publications"
-weight = 50
-url = "/research/#publications"
+
 
 

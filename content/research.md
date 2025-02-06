@@ -9,16 +9,14 @@ bio:
     text: Download CV
     url: /uploads/Kalvik_Jakkala.pdf
 collections:
-  - id: blog
+  - id: publications
     content:
-      title: Recent Posts
-      count: 2
+      title: Featured Publications
       filters:
-        section_name: /research/blog
-        featured_only: false
+        section_name: /research/publication
+        featured_only: true
     design:
       view: article-grid
-      fill_image: false
       columns: 2
 
   - id: projects
@@ -31,15 +29,17 @@ collections:
       view: article-grid
       fill_image: false
       columns: 1
-
-  - id: publications
+      
+  - id: blog
     content:
-      title: Featured Publications
+      title: Recent Posts
+      count: 2
       filters:
-        section_name: /research/publication
-        featured_only: true
+        section_name: /research/blog
+        featured_only: false
     design:
       view: article-grid
+      fill_image: false
       columns: 2
 
   - id: recent-publications
