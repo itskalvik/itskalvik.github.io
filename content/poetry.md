@@ -16,11 +16,9 @@ book:
   text: 
   links:
     - name: Get on Amazon
-      url: https://amazon.com/
-    - name: Get on Apple Books
-      url: https://apple.com/
+      url: https://a.co/d/htpLV54
     - name: Get on Barnes and Noble
-      url: https://barnesandnoble.com/
+      url: https://www.barnesandnoble.com/w/aint-pretty-just-beautiful-kalvik/1146953864?ean=9781662960031
 about:
   enabled: true
   image: "/images/kalvik_poetry.jpeg"
