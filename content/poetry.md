@@ -15,9 +15,9 @@ book:
     Amidst a backdrop of inner turmoil, the collection contemplates the search for a sustainable sense of self, offering moments of respite found in nature and the simple act of being present. A profound exploration of the delicate balance between despair and healing, this work is both a reflection and a refuge for those navigating the complexities of modern life.
   text: 
   links:
-    - name: Get on Amazon
+    - name: Get it on Amazon
       url: https://a.co/d/htpLV54
-    - name: Get on Barnes and Noble
+    - name: Get it on Barnes and Noble
       url: https://www.barnesandnoble.com/w/aint-pretty-just-beautiful-kalvik/1146953864?ean=9781662960031
 about:
   enabled: true
