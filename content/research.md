@@ -11,6 +11,8 @@ bio:
 collections:
   - id: publications
     content:
+      archive:
+        enable: true
       title: Featured Publications
       filters:
         section_name: /research/publication

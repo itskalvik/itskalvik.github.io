@@ -43,7 +43,13 @@
       <!--          </div>-->
       <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
         href="{{ $link }}" {{ $target | safeHTMLAttr }}>
-        {{ ($item.Params.summary | default $item.Summary) | plainify | htmlUnescape | chomp -}}
+        {{ if $item.Params.summary | default $item.Summary}}
+          {{ ($item.Params.summary | default $item.Summary) | plainify | htmlUnescape | chomp -}}
+        {{ else if $item.Params.publication_short }}
+          {{- $item.Params.publication_short | markdownify -}}.
+        {{ else if $item.Params.publication }}
+          {{- $item.Params.publication | markdownify -}}.
+        {{ end }}
       </a></p>
       </div>
       <div class="flex-none">
@@ -73,9 +79,11 @@
           <!--          </a>-->
           <span class="text-xs text-gray-300 dark:text-gray-600">•</span>
           {{end}}
+          {{ if ne ($item.Params.hide_date | default false) true }}
           <time class="truncate text-sm" datetime="{{ time.Format "2006-01-02" $item.Date }}">
           {{- $item.Date | time.Format (site.Params.locale.date_format | default ":date_long") -}}
           </time>
+          {{ end }}
         </div>
       </div>
 
