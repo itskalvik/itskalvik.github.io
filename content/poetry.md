@@ -69,21 +69,11 @@ tour:
       url: https://www.google.com/maps
 
 watch:
-  enabled: false
-  title: "Watch performances"
+  enabled: tue
+  title: "Videos"
   videos:
-    - title: "Test Video 1"
-      url: https://www.youtube.com/watch?v=arj7oStGLkU
-    - title: "Test Video 2"
-      url: https://www.youtube.com/watch?v=eIho2S0ZahI
-    - title: "Test Video 3"
-      url: https://www.youtube.com/watch?v=6Af6b_wyiwI
-    - title: "Test Video 4"
-      url: https://www.youtube.com/watch?v=DFjIi2hxxf0
-    - title: "Test Video 5"
-      url: https://www.youtube.com/watch?v=KM4Xe6Dlp0Y
-    - title: "Test Video 6"
-      url: https://www.youtube.com/watch?v=GZGY0wPAnus
+    - title: "Book Announcement"
+      url: https://www.youtube.com/watch?v=DWFaobPHOsw
 contact:
   enabled: true
   title: "Contact"

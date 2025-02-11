@@ -15,10 +15,10 @@ url = "#about"
 # weight = 3
 # url = "#tour"
 
-# [[poetry]]
-# name = "Watch"
-# weight = 4
-# url = "#watch"
+[[poetry]]
+name = "Videos"
+weight = 4
+url = "#watch"
 
 [[poetry]]
 name = "Contact"
