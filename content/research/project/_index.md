@@ -11,7 +11,7 @@ design:
 sections:
   - block: collection
     content:
-      title: Featured Project
+      title: Featured Projects
       text:
       filters:
         folders:
@@ -19,5 +19,5 @@ sections:
     design:
       view: article-grid
       fill_image: false
-      columns: 1
+      columns: 2
 ---

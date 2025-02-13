@@ -23,14 +23,14 @@ collections:
 
   - id: projects
     content:
-      title: Featured Project
+      title: Featured Projects
       filters:
         section_name: /research/project
         featured_only: false
     design:
       view: article-grid
       fill_image: false
-      columns: 1
+      columns: 2
       
   - id: blog
     content:
