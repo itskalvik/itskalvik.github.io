@@ -69,9 +69,11 @@ tour:
       url: https://www.google.com/maps
 
 watch:
-  enabled: tue
+  enabled: true
   title: "Videos"
   videos:
+    - title: "Daydream"
+      url: https://www.youtube.com/watch?v=wGcECSOA11Y
     - title: "Book Announcement"
       url: https://www.youtube.com/watch?v=DWFaobPHOsw
 contact:
