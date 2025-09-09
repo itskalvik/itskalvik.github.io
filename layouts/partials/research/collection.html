@@ -111,6 +111,9 @@
   {{ $archive_link := "" }}
   {{ if $block.content.archive.link }}
     {{ $archive_link = $block.content.archive.link | relLangURL }}
+  {{ else if and $block.content.filters.section_name (hasPrefix $block.content.filters.section_name "/") (not (in $block.content.filters.section_name "/research/")) }}
+    {{/* Use section_name directly for new flat structure (e.g., /publication, /blog, /project) */}}
+    {{ $archive_link = $block.content.filters.section_name }}
   {{ else }}
     {{ $archive_link = $archive_page.RelPermalink }}
   {{ end }}

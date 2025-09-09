@@ -1,13 +1,18 @@
 # Poetry
 
 [[poetry]]
-name = "Book"
+name = "Back to Research"
 weight = 1
+url = "/"
+
+[[poetry]]
+name = "Book"
+weight = 2
 url = "#book"
 
 [[poetry]]
 name = "About"
-weight = 2
+weight = 3
 url = "#about"
 
 # [[poetry]]
@@ -17,12 +22,12 @@ url = "#about"
 
 [[poetry]]
 name = "Videos"
-weight = 4
+weight = 5
 url = "#watch"
 
 [[poetry]]
 name = "Contact"
-weight = 5
+weight = 6
 url = "#contact"
 
 # Research
@@ -30,27 +35,32 @@ url = "#contact"
 [[research]]
 name = "Bio"
 weight = 10
-url = "/research/#bio"
+url = "/#bio"
 
 [[research]]
 name = "Publications"
 weight = 20
-url = "/research/#publications"
+url = "/#publications"
 
 [[research]]
 name = "Projects"
 weight = 30
-url = "/research/#projects"
+url = "/#projects"
 
 [[research]]
 name = "Blog"
 weight = 40
-url = "/research/#blog"
+url = "/#blog"
 
 [[research]]
 name = "Experience"
 weight = 50
-url = "/research/experience"
+url = "/experience"
+
+[[research]]
+name = "Poetry"
+weight = 60
+url = "/poetry"
 
 
 

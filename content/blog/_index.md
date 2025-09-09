@@ -1,6 +1,5 @@
 ---
 title: "Blog"
-layout: "research-blog-index"
 type: "blog"
 design:
   spacing: "3rem"
@@ -10,7 +9,7 @@ block:
     title: Blog
     count: 100
     filters:
-      section_name: /research/blog
+      section_name: /blog
       featured_only: false
   design:
     view: article-grid

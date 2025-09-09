@@ -1,6 +1,5 @@
 ---
 title: Publications
-layout: "publications-index"
 type: "publication"
 design:
   spacing: "3rem"
@@ -10,7 +9,7 @@ block:
     title: Publications
     count: 100
     filters:
-      section_name: /research/publication
+      section_name: /publication
       featured_only: false
   design:
     view: citation
