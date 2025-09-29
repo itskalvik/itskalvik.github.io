@@ -33,5 +33,6 @@ tags: []
 featured: true
 
 links:
+url_pdf: 'https://arxiv.org/pdf/2309.07050.pdf'
 url_code: 'https://itskalvik.com/sgp-tools'
 ---
