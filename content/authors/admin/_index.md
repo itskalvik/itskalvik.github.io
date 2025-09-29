@@ -38,12 +38,12 @@ profiles:
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/itskalvik
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=oZ29YBkAAAAJ&hl=en
+    url: https://scholar.google.com/citations?hl=en&user=hs0VeDIAAAAJ
 
 interests:
   - Bayesian Learning
-  - Approximate Inference
   - Path Planning
+  - Marine Robotics
 
 education:
   - area: PhD in Computer Science
@@ -86,4 +86,4 @@ awards:
 
 ## About Me
 
-My research lies at the intersection of machine learning and robotics, with a focus on approximate inference (Bayesian learning) and path planning. Currently, I am investigating sparse Gaussian processes to tackle critical issues in robotics. These include generating explainable DNN predictions, sensor placement, multi-robot informative path planning, and robot motion planning.
+My research lies at the intersection of machine learning and robotics, with a particular emphasis on environmental monitoring and autonomous systems. I develop algorithms for sensor placement and informative path planning, with current work focusing on enabling autonomous underwater vehicles to perform efficient inspection and monitoring tasks in challenging marine environments.
