@@ -41,9 +41,10 @@ profiles:
     url: https://scholar.google.com/citations?hl=en&user=hs0VeDIAAAAJ
 
 interests:
-  - Bayesian Learning
-  - Path Planning
+  - Informative path planning
+  - Sensor Placement
   - Marine Robotics
+  - Bayesian Learning
 
 education:
   - area: PhD in Computer Science
