@@ -34,5 +34,5 @@ featured: true
 
 links:
 url_pdf: 'https://openreview.net/pdf?id=f7Op01TROT'
-url_code: 'https://itskalvik.com/sgp-tools'
+url_code: 'https://www.sgp-tools.com/'
 ---

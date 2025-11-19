@@ -30,11 +30,11 @@ abstract: This paper addresses multi-robot informative path planning (IPP) for e
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 links:
 url_pdf: 'https://arxiv.org/pdf/2309.07050.pdf'
 url_video: 'https://www.youtube.com/embed/6PmpuqfQUv8?si=xfz6pa4n48optZ1P'
-url_code: 'https://itskalvik.com/sgp-tools'
+url_code: 'https://www.sgp-tools.com/'
 
 ---
