@@ -30,7 +30,7 @@ abstract: Autonomous robots can survey and monitor large environments. However, 
 tags: []
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 links:
 url_pdf: 'https://openreview.net/pdf?id=f7Op01TROT'
