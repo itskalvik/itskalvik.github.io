@@ -35,5 +35,5 @@ tags: []
 featured: true
 
 links:
-url_pdf:
+url_pdf: https://arxiv.org/pdf/2602.05198
 ---
