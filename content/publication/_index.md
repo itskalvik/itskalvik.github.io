@@ -12,5 +12,7 @@ block:
       section_name: /publication
       featured_only: false
   design:
-    view: citation
+    view: article-grid
+    fill_image: false
+    columns: 2
 ---
