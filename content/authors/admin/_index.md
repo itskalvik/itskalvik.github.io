@@ -49,15 +49,15 @@ interests:
 education:
   - area: PhD in Computer Science
     institution: University of North Carolina at Charlotte
-    date_start: 2018-01-01
+    date_start: 2018-08-01
     date_end: 2024-07-31
   - area: MSc in Computer Science
     institution: University of North Carolina at Charlotte
-    date_start: 2018-01-01
+    date_start: 2018-08-01
     date_end: 2021-01-01
   - area: BSc in Computer Science
     institution: Wichita State University
-    date_start: 2014-01-01
+    date_start: 2014-08-01
     date_end: 2018-05-31
 work:
   - position: Postdoctoral Researcher
