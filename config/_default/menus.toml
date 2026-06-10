@@ -15,21 +15,6 @@ name = "About"
 weight = 3
 url = "#about"
 
-# [[poetry]]
-# name = "Tour"
-# weight = 3
-# url = "#tour"
-
-[[poetry]]
-name = "Videos"
-weight = 5
-url = "#watch"
-
-[[poetry]]
-name = "Contact"
-weight = 6
-url = "#contact"
-
 # Research
 
 [[research]]
