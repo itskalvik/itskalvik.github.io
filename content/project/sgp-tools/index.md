@@ -1,6 +1,6 @@
 ---
 title: SGP-Tools
-summary: Software Suite for SGP-based Sensor Placement and Informative Path Planning
+summary: Software Suite for SGP-based Informative Path Planning
 tags:
   - Library
 date: '2024-05-08T00:00:00Z'

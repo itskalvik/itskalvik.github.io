@@ -1,6 +1,6 @@
 ---
 title: BlueOS ROS2
-summary: This extension enables controlling an ArduPilot-based vehicle (BlueBoat, BlueROV) via ROS2
+summary: BlueOS ROS2 extension for controlling Blue Robotics BlueBoat and BlueROV
 tags:
   - Extension
 date: '2024-01-07T00:00:00Z'
