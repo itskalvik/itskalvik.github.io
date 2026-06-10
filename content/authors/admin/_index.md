@@ -54,7 +54,7 @@ education:
   - area: MSc in Computer Science
     institution: University of North Carolina at Charlotte
     date_start: 2018-08-01
-    date_end: 2021-01-01
+    date_end: 2021-05-01
   - area: BSc in Computer Science
     institution: Wichita State University
     date_start: 2014-08-01
