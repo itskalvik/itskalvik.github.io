@@ -87,4 +87,10 @@ awards:
 
 ## About Me
 
-My research lies at the intersection of machine learning and robotics, with a particular emphasis on environmental monitoring and autonomous systems. I develop algorithms for sensor placement and informative path planning, with current work focusing on enabling autonomous underwater vehicles to perform efficient inspection and monitoring tasks in challenging marine environments.
+Research scientist specializing at the intersection of machine learning and marine robotics. Backed by extensive hands-on experience, with a proven track record of translating complex algorithms into field-ready solutions and deploying physical robots in dynamic, real-world environments.
+
+### **Core Expertise:**
+
+**Machine Learning:** Bayesian learning theory, Gaussian \& Sparse Gaussian processes, real-time applications.\
+**Sensing \& Navigation:** Multi-modal sensing (camera, sonar, radar), robust autonomous navigation systems.\
+**Hardware \& Deployment:** Real-world robotic deployment with resource-constrained edge devices.
