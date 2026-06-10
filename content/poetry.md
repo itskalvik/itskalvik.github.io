@@ -23,62 +23,11 @@ about:
   enabled: true
   image: "/images/kalvik_poetry.jpeg"
   title: "Kalvik Jakkala"
-  subtitle: "Postdoctoral Researcher"
-  social:
-    - url: https://instagram.com/itskalvik
-      icon: /svg/instagram.svg
-      icon_white: /svg/instagram-white.svg
-    - url: https://youtube.com/@itskalvik
-      icon: /svg/youtube.svg
-      icon_white: /svg/youtube-white.svg
   text: |
     ## About the author
 
     Kalvik was born and raised in India, where his early years were shaped by a deep fascination with American culture and the promise of the "American Dream." At eighteen, he moved to the United States to pursue higher education, embarking on a decade-long journey in search of that dream. 
     
     In time, however, Kalvik discovered that the true essence of the dream was not something to chase but something to embody. Now a postdoctoral fellow at Texas A&M University, he spends his leisure time immersing himself in film photography, ballroom dancing, poetry, and the art of daydreaming.
-tour:
-  enabled: false
-  title: "Tour dates"
-  description: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  events:
-    - title: "Event 1 bigger text test"
-      date: "2024-01-01"
-      time: "10:00 AM"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      location: "New York, NY"
-      url: https://www.google.com/maps
-    - title: "Event 2"
-      date: "2024-01-02"
-      time: "10:00 AM"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      location: "Los Angeles, CA"
-      url: https://www.google.com/maps
-    - title: "Event 3"
-      date: "2024-01-03"
-      time: "10:00 AM"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      location: "Chicago, IL"
-      url: https://www.google.com/maps
-    - title: "Event 4"
-      date: "2024-01-04"
-      time: "10:00 AM"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      location: "Miami, FL"
-      url: https://www.google.com/maps
-
-watch:
-  enabled: true
-  title: "Videos"
-  videos:
-    - title: "Daydream"
-      url: https://www.youtube.com/watch?v=wGcECSOA11Y
-    - title: "Book Announcement"
-      url: https://www.youtube.com/watch?v=DWFaobPHOsw
-contact:
-  enabled: true
-  title: "Contact"
-  description: "Have questions? Feel free to reach out using the form below:"
 ---
 
