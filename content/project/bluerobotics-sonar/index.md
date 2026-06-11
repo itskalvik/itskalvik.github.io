@@ -1,5 +1,5 @@
 ---
-title: ROS2 Bluerobotics Sonar
+title: ROS2 Blue Robotics Sonar
 summary: ROS 2 package for Blue Robotics Sonars
 tags:
   - Package
