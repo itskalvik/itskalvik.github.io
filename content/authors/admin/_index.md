@@ -87,7 +87,7 @@ awards:
 
 ## About Me
 
-Research scientist specializing at the intersection of machine learning and marine robotics. Backed by extensive hands-on experience, with a proven track record of translating complex algorithms into field-ready solutions and deploying physical robots in dynamic, real-world environments.
+Research scientist specializing at the intersection of machine learning and field robotics. Backed by extensive hands-on experience, with a proven track record of translating complex algorithms into field-ready solutions and deploying physical robots in dynamic, real-world environments.
 
 ### **Core Expertise:**
 
