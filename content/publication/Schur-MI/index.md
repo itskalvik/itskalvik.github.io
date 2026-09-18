@@ -35,5 +35,6 @@ featured: true
 
 links:
 url_pdf: https://arxiv.org/pdf/2602.12346
+url_video: https://youtu.be/ykglYK-1R3k?si=KYGaiZAhOWZjFs0n
 url_code: 'https://www.sgp-tools.com/'
 ---
